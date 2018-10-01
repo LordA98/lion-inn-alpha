@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lion Inn</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="stylesheets/style.css"> -->
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
+    <link rel="stylesheet" href="stylesheets/buttons.css">
+    <link rel="stylesheet" href="stylesheets/food.css">
+    <link rel="stylesheet" href="stylesheets/events.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+</head>
+
+<body class="montserrat">
+
+    <div class="home-bg-image"></div>
+
+    <div class="container">
+        <!-- Home section / landing page -->
+        <div class="home p-0" style="color: white;">
+            <!-- Header - logo and nav -->
+            <nav class="navbar navbar-expand-lg mb-5 pt-3 header row">
+                <!-- Logo -->
+                <a class="navbar-brand ml-3 mr-5 p-0" href="#">
+                    <img src="images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
+                </a>
+                <!-- Hamburger for smaller screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars" style="font-size:40pt; color:#FFF;"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item ml-3 mr-5">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#">FOOD</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link disabled" href="#">ACCOMMODATION</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#">EVENTS</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link disabled" href="#">GALLERY</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Empty column-1 to center nav elements -->
+                <div class="col-lg-1"></div>
+            </nav>
+
+            <div class="center row py-5">
+                <div class="col-xl-6 offset-xl-3 text-center mt-5 mb-3">
+                    <h1 class="great-vibes m-0 mr-3 main-heading">Welcome</h1>
+                    <h4 class="m-0 to">to</h4>
+                    <!-- TODO - check that this font will work when deployed -->
+                    <h1 class="algerian m-0 main-heading">The Lion Inn</h1>
+                </div>
+            </div>
+
+            <div class="buttons row bg-dark mb-5 pb-5 ">
+                <div class="col-6 col-xl-2 offset-xl-4 p-0 text-center">
+                    <button type="button" class="btn btn-lg">
+                        <i class="fas fa-utensils btn-icon"></i>
+                        <span class="px-1">Book Table</span>
+                        <i class="fas fa-angle-down btn-icon"></i>
+                    </button>
+                </div>
+
+                <div class="col-6 col-xl-2 p-0 text-center">
+                    <button type="button" class="btn btn-transparent btn-lg">
+                        <i class="fas fa-bed btn-icon"></i>
+                        <span class="px-1">Book Room</span>
+                        <i class="fas fa-angle-down btn-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="arrow row ">
+                <div class="col-12 text-center my-5 py-5">
+                    <i class="fas fa-arrow-circle-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="about-us">
+
+        </div> -->
+
+        <div class="food mt-5 bg-dark">
+            <div class="title text-center">
+                <h1 class="great-vibes section-heading">Food</h1>
+            </div>
+
+            <div class="menu row bg-danger">
+                <div class="left col-lg-6 offset-lg-1 text-center bg-primary">
+                    <h2 class="great-vibes minor-heading">Menu</h2>
+                    <div class="mt-3 desc">
+                        <p>
+                            The menus range from traditional pub grub, through to the exotic and unheard of; with children and vegetarians being catered for. Sourcing the majority of the produce within 10 miles of the pub.  For example, the meats come from the local communities of Shirenewton, Raglan & Trellech.  A "standard" menu is provided within the pub along with a number of "specials" menus.
+                        </p>
+                        <p>
+                            The specials boards change regularly and often feature dishes that offer new eating experiences for more adventurous diners. Regular favourites include Beef Stroganoff, Chicken in a creamy Tarragon sauce, Kangaroo steak, Ostrich with a creamy garlic sauce, Pork steak with a cider sauce and Duck.
+                        </p>
+                        <p>
+                            Special menu’s are created for Easter Sunday and Mother’s Day.  Takeaway pizza’s are also available.
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-sm mt-3">
+                        <span class="px-1">View Menu</span>
+                    </button>
+                </div>
+
+                <div class="right col-lg-3 offset-lg-1 bg-success">
+                    <img src="images/menu.png" alt="Image of Menu" style="height:430px;"/>
+                </div>
+            </div>
+
+            <div class="reservation row bg-secondary mt-5">
+                <div class="times col-lg-4 text-center mt-4">
+                    <h2 class="great-vibes minor-heading">Times</h2>
+                    <i class="far fa-clock"></i>
+                    <div class="opening-times">
+                        <h5 class="my-3">Opening Times</h5>
+                        <p>
+                            Monday - Wednesday <br/>
+                            12:00 - 23:00 <br/>
+                            Thursday - Saturday <br/>
+                            12:00 - 00:00 <br/>
+                            Sunday <br/>
+                            12:00 - 22:00
+                        </p>
+                    </div>
+                    <div class="dining-times">
+                        <h5 class="my-3">Dining Times</h5>
+                        <p>
+                            Monday - Saturday <br/>
+                            12:00 - 21:30 <br/>
+                            Sunday <br/>
+                            12:00 - 18:00
+                        </p>
+                    </div>
+                </div>
+
+                <div class="book-table col-lg-8 text-center bg-light mt-4">
+                    <h2 class="great-vibes minor-heading">Reservation</h2>
+                    <i class="fas fa-book-open"></i>
+                    <h5 class="my-3">Please call us on the number below.</h5>
+                    <p class="mt-5">
+                        Please mention any special dietary requirements </br>
+                        (vegetarian, gluten free, peanut allergy).
+                    </p>
+                    <p>
+                        Please also mention if you are bringing a dog.
+                    </p>
+                    <div class="icons">
+                        <img class="mx-2" src="images/pet-friendly.png" alt="Image of Pet Friendly Icon" />
+                        <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                        <img class="mx-2" src="images/gluten-free.png" alt="Image of Gluten Free Icon" />
+                    </div>
+                    <div class="book-now mt-4">
+                        <h4 class="great-vibes">Book Now</h4>
+                        <button type="button" class="btn btn-lg mt-3">
+                            <span class="px-1">01600 860322</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="accommodation">
+            <div class="cottage">
+
+            </div>
+
+            <div class="cards">
+
+            </div>
+
+            <div class="phone-number">
+
+            </div>
+        </div> -->
+
+
+        <div class="events mt-5 bg-light">
+            <div class="title text-center">
+                <h1 class="great-vibes section-heading">Events</h1>
+            </div>
+            <!-- NOTE - use toggleable tabs for regular events section -->
+            <div class="regular">
+                <h2 class="montserrat event-sub-heading">Regular Events</h2>
+                <hr class="bg-light"/>
+                <!-- Day Tabs -->
+                <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Monday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tuesday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Wednesday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Thursday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Friday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Saturday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">TODAY</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                </div> -->
+            </div>
+
+            <div class="upcoming">
+                <h2 class="montserrat event-sub-heading">Upcoming Events</h2>
+                <hr class="bg-light"/>
+            </div>
+        </div>
+
+        <!-- <div class="gallery">
+
+        </div> -->
+
+        <!-- <div class="footer">
+            <div class="contact">
+
+            </div>
+
+            <div class="copyright">
+
+            </div>
+        </div> -->
+
+    </div> <!-- Container -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

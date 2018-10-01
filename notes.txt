@@ -1,0 +1,151 @@
+Fonts being used:
+
+Montserrant
+Great Vibes
+Algerian Regular
+
+CAN ONLY USE MySQL
+
+Does the copyright need to change from 2014 to 2018?
+
+Once finished, how do I upload new site?
+Answer:
+Control Panel / FTP Client - upload all files of site to here (web folder)
+
+IMPORTANT: take backup of current files in web folder, incase anything goes wrong
+			THEN - remove current files and input my files
+
+
+WordPress - either use built-in 1-Click Install (however this can be bad as site is then live straight away) 
+			OR create site elsewhere (localhost/WordPress) and then use FTP client to add files 
+			
+			
+DESIGN TODO:
+
+- REDO whatever design I choose, but with a 960 center rather than the current larger center (to see what it looks like - based off of what I have read online).
+
+- Stock photo needs to be replaced by actual cottage photo (not during design phase).
+
+- Mobile version of site in PS
+	- Fix title section
+	- Check title font sizes all match
+
+- Should I add a dashboard so that events can be added as well?
+	- Or do this within WordPress if possible?
+	
+	
+	
+PLAN:
+	- Finish mobile design.
+		- MILESTONE: 
+			- Happy with mobile design version.
+			- Happy with desktop version.
+	
+	- MVP
+		- Create theme that includes HOME, MENU & EVENTS sections.
+		- Save this as a theme - lioninn-alpha
+		- Begin to setup WordPress and plug this all in
+		- Deadline - Start of December.
+		- MILESTONE: 
+			- Home section complete. 
+			- Food section complete.
+			- Events section complete.
+			- Food --> Menu page (menu page complete).
+			- Fully responsive for tablets and phones.
+	
+	- Addition of remaining sections.
+		- Add remaining sections.
+		- Create new theme - lioninn-beta
+		- Deadline - TBD
+		- MILESTONE: 
+			- All sections added to theme.
+			- Theme uploaded and plugged into site.
+			
+	- Maintenance
+		- Fix any bugs or issues that arise
+		- Ensure Deb can add & edit menu page and events page.
+
+
+MENU
+
+List of Menu's:
+- standard
+- pizza
+- specials
+- desserts
+- sunday
+- upcoming / current event / holiday menu (e.g. easter sunday, christmas, mother's day etc)  (NOTE: I do not need to do these menu's - Deb's should have the ability to do them herself).
+
+- gluten free options    ( these two will be filter options)
+- vegetarian
+
+
+
+Opening Times
+
+Monday 12:00-23:00
+Tuesday 12:00-23:00
+Wednesday 12:00-23:00
+Thursday 12:00-00:00
+Friday 12:00-00:00
+Saturday 12:00-00:00
+Sunday 12:00-22.00
+
+
+Dining Times
+
+Monday 12:00-21:30 
+Tuesday 12:00-21:30 
+Wednesday 12:00-21:30 
+Thursday 12:00-21:30 
+Friday 12:00-21:30
+Saturday 12:00-21.30
+Sunday 12:00-18.00
+
+
+EVENTS
+
+REGULAR Events
+
+Open Mic Night - MONDAY
+Come along the 1st & 3rd Monday night every month. If you play an instrument or sing, or just enjoy entertaining come along fun begins at 8.30pm.
+
+Twilight Jazz SUNDAY
+Come along the 2nd Sunday every month. If you enjoy Jazz this is a night for you so come and join us. Fun begins at 5pm.
+
+Cribb - TUESDAY 
+The Lion Inn participates in the local cribb league during the winter.
+During the summer an in-house friendly ladder league is run - all are welcome. 
+
+Quiz - WEDNESDAY 
+The Lion Inn participates in the local quiz league during the winter.
+During the summer on the 1st & 3rd Wednesday The Lion Inn hosts a friendly quiz night - all are welcome. 
+
+Darts - THURSDAY 
+The Lion Inn participates in the local darts league during the winter.
+During the summer the darts team practice all are welcome to join in and take on the team members.
+
+Fish on FRIDAY
+
+
+UPCOMING
+**placeholders - not real events**
+
+September
+10th - Live music with THE AMIGOS - fun begins at 9pm
+28th - Live rugby - starts at 7:30pm.
+
+October
+31st - Special menu for halloween
+
+November
+9th - Live music with THE BBC ACCOUSTIC BAND - fun begins at 9pm.
+
+December
+24th - Christmas Eve - Live music & open mic night - starts at 8pm.
+26th - Boxing Day
+Book early to avoid disappointment.
+
+January
+1st - New Years Day - Special menu for new year
+21st - Live music & open mic night - starts at 8pm.

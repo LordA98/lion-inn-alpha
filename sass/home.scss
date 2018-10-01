@@ -1,0 +1,94 @@
+
+@import 'variables';
+
+/*Set width of container to 1440px for screens wider than 1440px*/
+// @media (min-width: 1440px) {
+//     .container {
+//         max-width: 1440px;
+//     }
+// }
+
+// Temp replacement for above media qeury
+.container {
+    max-width: 1440px;
+}
+
+// Clear margins and paddings
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ * Initializers
+ *
+ */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+// Set all text color to white
+.container {
+    color: #FFF;
+}
+
+/*
+ * General Stylings
+ * Headings & Paragraphs
+ *
+ */
+
+// Headings
+.main-heading {
+    font-size: 10vmin;
+}
+.to {
+    font-size: 18pt;
+}
+.section-heading {
+    font-size: 70pt;
+}
+.minor-heading {
+    font-size: 40pt;
+}
+
+// Paragraphs
+p {
+    font-size: 9pt;
+}
+// Longer / Descriptive paragraphs in certain sections
+.desc {
+    line-height: 2.5;
+}
+
+/*
+ * HOME Specific Styling
+ *
+ */
+.home-bg-image {
+    background: url('../images/home-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // left: 0; // don't think this does anything
+}
+
+// Navbar
+nav a {
+    font-size: 9pt;
+    color: white;
+}
+nav a:hover {
+    color: $lion-purple;
+}
+
+// Arrow down at bottom of home section
+.arrow i {
+    font-size: 30pt;
+}

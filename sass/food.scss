@@ -1,0 +1,37 @@
+// CSS Related Specifically to Food Section
+
+@import 'variables';
+
+/*
+ * Media Queries
+ */
+// Hide menu image when screen gets to mobile size
+@media (max-width: 992px) {
+    .food .menu .right {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+/*
+ * CSS
+ */
+
+.food .reservation .book-table {
+    color: #000;
+}
+
+.food .reservation .book-table i {
+    color: $lion-purple;
+}
+
+// Sizing of icons within the triangle
+// Clock & Open Book
+.food i {
+    font-size: 14pt;
+}
+// Dog Paw, Veggie and Gluten Free
+.food .icons img {
+    height: 25px;
+    width: 25px;
+}

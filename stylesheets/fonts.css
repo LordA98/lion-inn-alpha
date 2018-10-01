@@ -1,0 +1,13 @@
+/*
+    FONTS USED IN WEBSITE
+    Just assign a HTML tag one of these classes
+    E.g. <div class="montserrat">...</div>
+ */
+.montserrat {
+  font-family: 'Montserrat', sans-serif; }
+
+.great-vibes {
+  font-family: 'Great Vibes', cursive; }
+
+.algerian {
+  font-family: 'Algerian Regular', sans-serif; }
