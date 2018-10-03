@@ -17,21 +17,67 @@
  * CSS
  */
 
-.food .reservation .book-table {
+/*
+ * FOOD section
+ */
+.food {
     color: #000;
 }
 
-.food .reservation .book-table i {
-    color: $lion-purple;
+/*
+ * FOOD --> BOOK TABLE
+ */
+.food .book-table p {
+    font-size: 10pt;
 }
 
-// Sizing of icons within the triangle
-// Clock & Open Book
-.food i {
+/*
+ * FOOD --> BOOK TABLE --> TIMES section
+ */
+.food .book-table .times {
+    background-color: $lion-purple;
+    color: #FFF;
+}
+.food .book-table hr {
+    width: 10%;
+}
+
+/*
+ * FOOD --> BOOK TABLE --> RESERVATION section
+ */
+// Black text
+.food .book-table .reservation {
+    color: #000;
+}
+// Clock & Open Book Icons
+.food .book-table i {
     font-size: 14pt;
+}
+// Book Icon
+.food .book-table .reservation i {
+    color: $lion-purple;
 }
 // Dog Paw, Veggie and Gluten Free
 .food .icons img {
     height: 25px;
     width: 25px;
 }
+// Cursive title on top of phone number
+.food .book-table .reservation .book-now h4 {
+    font-size: 22pt;
+    position: absolute;
+    width: 100%;
+    right: 2px;
+}
+
+// Background Image for Food Section
+// .food-bg-image {
+//     background: url('../images/food-bg.jpg') no-repeat;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     background-size: cover;
+//     -o-background-size: cover;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+// }

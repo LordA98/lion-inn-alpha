@@ -1,9 +1,35 @@
-// CSS styling related to events section
+/*
+ * CSS styling related to events section
+ */
 
+@import 'variables';
+
+/*
+ * General
+ */
 .events {
     color: #000;
 }
-
 .events .event-sub-heading {
     font-size: 15pt;
 }
+
+/*
+ * Regular Events
+ */
+.events .regular .week-days-titles {
+    color: $lion-purple;
+}
+.events .regular .nav-item a {
+    height: 100px;
+}
+.events .regular .nav-item a i {
+    font-size: 35pt;
+    color: black;
+}
+
+
+
+/*
+ * Upcoming Events
+ */

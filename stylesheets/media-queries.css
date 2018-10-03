@@ -1,7 +1,29 @@
 /*
  * Media Queries for whole site
- *
  */
 /*
- * HOME Section
+ * FOOD Section
  */
+@media (min-width: 768px) {
+  .week-days .col-md-1,
+  .week-days .col-sm-1,
+  .week-days .col-lg-1 {
+    width: 100%;
+    max-width: 14.285714285714285714285714285714% !important;
+    flex: none !important; } }
+
+@media (min-width: 992px) {
+  .week-days .col-md-1,
+  .week-days .col-sm-1,
+  .week-days .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    max-width: 14.285714285714285714285714285714% !important;
+    flex: none !important; } }
+
+@media (min-width: 1200px) {
+  .week-days .col-md-1,
+  .week-days .col-sm-1,
+  .week-days .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    max-width: 14.285714285714285714285714285714% !important;
+    flex: none !important; } }

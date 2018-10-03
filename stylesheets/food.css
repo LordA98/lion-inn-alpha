@@ -9,15 +9,46 @@
 /*
  * CSS
  */
-.food .reservation .book-table {
+/*
+ * FOOD section
+ */
+.food {
   color: #000; }
 
-.food .reservation .book-table i {
-  color: #673ab7; }
+/*
+ * FOOD --> BOOK TABLE
+ */
+.food .book-table p {
+  font-size: 10pt; }
 
-.food i {
+/*
+ * FOOD --> BOOK TABLE --> TIMES section
+ */
+.food .book-table .times {
+  background-color: #673ab7;
+  color: #FFF; }
+
+.food .book-table hr {
+  width: 10%; }
+
+/*
+ * FOOD --> BOOK TABLE --> RESERVATION section
+ */
+.food .book-table .reservation {
+  color: #000; }
+
+.food .book-table i {
   font-size: 14pt; }
+
+.food .book-table .reservation i {
+  color: #673ab7; }
 
 .food .icons img {
   height: 25px;
   width: 25px; }
+
+.food .book-table .reservation .book-now h4 {
+  font-size: 22pt;
+  position: absolute;
+  width: 100%;
+  right: 2px; }
