@@ -8,7 +8,7 @@
 //     }
 // }
 
-// Temp replacement for above media qeury
+// Temp replacement for above media qeury to see if it works
 .container {
     max-width: 1440px;
 }
@@ -42,7 +42,7 @@ body {
 
 // Headings
 .main-heading {
-    font-size: 6vmax;
+    font-size: 10vmin;
 }
 .to {
     font-size: 18pt;
@@ -65,8 +65,13 @@ p {
 /*
  * HOME Specific Styling
  */
+
+// Height set to 100vh so that whatever the screen size is, the home page intially fills it
+.home {
+    height: 100vh;
+}
 .home-bg-image {
-    background: url('../images/home-bg.png') no-repeat;
+    background: url('../images/home-bg.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -82,7 +87,8 @@ nav a {
     color: white;
 }
 nav a:hover {
-    color: $lion-purple;
+    color: #FFF;
+    text-decoration: underline !important;
 }
 
 // Arrow down at bottom of home section

@@ -13,33 +13,67 @@
 .events .event-sub-heading {
     font-size: 15pt;
 }
+// regular and upcoming sub-sub-headings
+.events .regular h3 {
+ color: $lion-purple;
+}
 
 /*
  * Regular Events
  */
+// Weekdays titles
 .events .regular .week-days-titles {
     color: $lion-purple;
 }
+// Day nav-tabs (boxes with icons in)
 .events .regular .nav-item a {
     height: 100px;
     border-left: 1px solid black;
     border-radius: 0px;
     border-top: none;
 }
+// icons (some are images, some are font awesome icons)
 .events .regular .nav-item a i {
     font-size: 35pt;
     color: black;
 }
+.events .regular .nav-item a img {
+    height: 50px;
+    width: 50px;
+}
+// Set purple bg and white font color for active & hovered tabs
+.events .regular .nav-item a:hover,
+.events .regular .nav-item .active {
+    background-color: $lion-purple;
+    border-right: 1px solid $lion-purple;
+    border-bottom: 1px solid $lion-purple;
+}
+.events .regular .nav-item a:hover i,
+.events .regular .nav-item .active i,
+.events .regular .nav-item a:hover img,
+.events .regular .nav-item .active img, {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+    color: #FFF;
+}
+
 // Add extra border needed on far right side
 .events .regular .nav-item a#sunday-tab {
     border-right: 1px solid black;
 }
 
-.events .regular h3 {
-    color: $lion-purple;
-}
 
 
 /*
  * Upcoming Events
  */
+// Dates
+.events .upcoming .date .month {
+    font-size: 12pt;
+}
+.events .upcoming .date .date-separator {
+    width: 20%;
+}
+.events .upcoming .date .day {
+    font-size: 30pt;
+}

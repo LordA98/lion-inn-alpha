@@ -25,7 +25,7 @@ body {
  *
  */
 .main-heading {
-  font-size: 6vmax; }
+  font-size: 10vmin; }
 
 .to {
   font-size: 18pt; }
@@ -45,8 +45,11 @@ p {
 /*
  * HOME Specific Styling
  */
+.home {
+  height: 100vh; }
+
 .home-bg-image {
-  background: url("../images/home-bg.png") no-repeat;
+  background: url("../images/home-bg.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -60,7 +63,8 @@ nav a {
   color: white; }
 
 nav a:hover {
-  color: #673ab7; }
+  color: #FFF;
+  text-decoration: underline !important; }
 
 .arrow i {
   font-size: 30pt; }

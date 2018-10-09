@@ -10,6 +10,9 @@
 .events .event-sub-heading {
   font-size: 15pt; }
 
+.events .regular h3 {
+  color: #673ab7; }
+
 /*
  * Regular Events
  */
@@ -26,12 +29,35 @@
   font-size: 35pt;
   color: black; }
 
+.events .regular .nav-item a img {
+  height: 50px;
+  width: 50px; }
+
+.events .regular .nav-item a:hover,
+.events .regular .nav-item .active {
+  background-color: #673ab7;
+  border-right: 1px solid #673ab7;
+  border-bottom: 1px solid #673ab7; }
+
+.events .regular .nav-item a:hover i,
+.events .regular .nav-item .active i,
+.events .regular .nav-item a:hover img,
+.events .regular .nav-item .active img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  color: #FFF; }
+
 .events .regular .nav-item a#sunday-tab {
   border-right: 1px solid black; }
-
-.events .regular h3 {
-  color: #673ab7; }
 
 /*
  * Upcoming Events
  */
+.events .upcoming .date .month {
+  font-size: 12pt; }
+
+.events .upcoming .date .date-separator {
+  width: 20%; }
+
+.events .upcoming .date .day {
+  font-size: 30pt; }
