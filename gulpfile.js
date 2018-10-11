@@ -3,6 +3,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concatCss = require('gulp-concat-css');
+let cleanCSS = require('gulp-clean-css');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Sass Task
 gulp.task('sass', function () {
@@ -11,14 +13,22 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./stylesheets'));
 });
 
-// Watch for changes in .scss files
-gulp.task('sass:watch', function(){
-    gulp.watch('sass/*.scss', gulp.series('sass'));
+
+// Concat all css files into one - styles.min.css
+// Places CSS file in root folder
+gulp.task('css', function () {
+  return gulp.src('stylesheets/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
+    .pipe(concatCss("style.min.css"))
+    .pipe(gulp.dest('./'));
 });
 
-// Concat all css files into one - styles.css
-// gulp.task('css', function () {
-//   return gulp.src('stylesheets/*.css')
-//     .pipe(concatCss("stylesheets/style.css"))
-//     .pipe(gulp.dest('stylesheets/'));
-// });
+
+// Watch for changes in .scss files
+// When changes are saved - compile Sass file into CSS
+// and then concatenate all CSS files into styles.min.css
+gulp.task('watch', function(){
+    gulp.watch('sass/*.scss', gulp.series('sass'));
+    gulp.watch('stylesheets/*.css', gulp.series('css'));
+});

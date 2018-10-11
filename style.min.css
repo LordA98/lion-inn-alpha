@@ -1,0 +1,279 @@
+.btn {
+  background-color: #673ab7;
+  border: 1pt solid #673ab7;
+  border-radius: 0;
+  color: #fff;
+}
+
+.btn-transparent {
+  background: rgba(0,0,0,.3);
+  border: 1pt solid #fff;
+}
+
+.btn-icon {
+  font-size: 15pt;
+  color: #fff;
+}
+.events {
+  color: #000;
+}
+
+.events .event-sub-heading {
+  font-size: 15pt;
+}
+
+.events .regular h3 {
+  color: #673ab7;
+}
+
+.events .regular .week-days-titles {
+  color: #673ab7;
+}
+
+.events .regular .nav-item a {
+  height: 100px;
+  border-left: 1px solid #000;
+  border-radius: 0;
+  border-top: none;
+}
+
+.events .regular .nav-item a i {
+  font-size: 35pt;
+  color: #000;
+}
+
+.events .regular .nav-item a img {
+  height: 50px;
+  width: 50px;
+}
+
+.events .regular .nav-item .active,
+.events .regular .nav-item a:hover {
+  background-color: #673ab7;
+  border-right: 1px solid #673ab7;
+  border-bottom: 1px solid #673ab7;
+}
+
+.events .regular .nav-item .active i,
+.events .regular .nav-item .active img,
+.events .regular .nav-item a:hover i,
+.events .regular .nav-item a:hover img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  color: #fff;
+}
+
+.events .regular .nav-item a#sunday-tab {
+  border-right: 1px solid #000;
+}
+
+.events .upcoming .date .month {
+  font-size: 12pt;
+}
+
+.events .upcoming .date hr {
+  width: 20%;
+}
+
+.events .upcoming .date .day {
+  font-size: 30pt;
+}
+
+.events .upcoming .image .event-image {
+  width: 100%;
+}
+
+.events .upcoming .desc .event-title {
+  color: #673ab7;
+}
+
+.events .upcoming .info {
+  line-height: 2;
+}
+
+.events .upcoming .info hr {
+  width: 10%;
+}
+
+.events .upcoming .more p {
+  color: #673ab7;
+}
+.montserrat {
+  font-family: Montserrat,sans-serif;
+}
+
+.great-vibes {
+  font-family: 'Great Vibes',cursive;
+}
+
+.algerian {
+  font-family: 'Algerian Regular',sans-serif;
+}
+@media (max-width:992px) {
+  .food .menu .right {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.food {
+  color: #000;
+}
+
+.food .book-table {
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,.19),0 6px 20px 0 rgba(0,0,0,.19);
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,.19),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.food .book-table p {
+  font-size: 10pt;
+}
+
+.food .book-table .times {
+  background-color: #673ab7;
+  color: #fff;
+}
+
+.food .book-table hr {
+  width: 10%;
+}
+
+.food .book-table .reservation {
+  color: #000;
+}
+
+.food .book-table i {
+  font-size: 14pt;
+}
+
+.food .book-table .reservation i {
+  color: #673ab7;
+}
+
+.food .icons img {
+  height: 25px;
+  width: 25px;
+}
+
+.food .book-table .reservation .book-now h4 {
+  font-size: 22pt;
+  position: absolute;
+  width: 100%;
+  right: 2px;
+}
+.footer-bg {
+  background-color: #000;
+}
+
+.footer .contact i {
+  font-size: 15pt;
+}
+
+.footer .copyright p {
+  font-size: 6pt;
+}
+.container {
+  max-width: 1440px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.container {
+  color: #fff;
+}
+
+.main-heading {
+  font-size: 10vmin;
+}
+
+.to {
+  font-size: 18pt;
+}
+
+.section-heading {
+  font-size: 70pt;
+}
+
+.minor-heading {
+  font-size: 40pt;
+}
+
+p {
+  font-size: 9pt;
+}
+
+.desc {
+  line-height: 2.5;
+}
+.home {
+  height: 100vh;
+}
+
+.home-bg-image {
+  background: url("images/home-bg.png") no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+nav a {
+  font-size: 9pt;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: underline!important;
+}
+
+.arrow i {
+  font-size: 30pt;
+}
+@media (min-width:768px) {
+  .week-days .col-lg-1,
+  .week-days .col-md-1,
+  .week-days .col-sm-1 {
+    width: 100%;
+    max-width: 14.285714285714285714285714285714%!important;
+    -webkit-box-flex: 0!important;
+    -ms-flex: none!important;
+    flex: none!important;
+  }
+}
+
+@media (min-width:992px) {
+  .week-days .col-lg-1,
+  .week-days .col-md-1,
+  .week-days .col-sm-1 {
+    width: 14.285714285714285714285714285714%;
+    max-width: 14.285714285714285714285714285714%!important;
+    -webkit-box-flex: 0!important;
+    -ms-flex: none!important;
+    flex: none!important;
+  }
+}
+
+@media (min-width:1200px) {
+  .week-days .col-lg-1,
+  .week-days .col-md-1,
+  .week-days .col-sm-1 {
+    width: 14.285714285714285714285714285714%;
+    max-width: 14.285714285714285714285714285714%!important;
+    -webkit-box-flex: 0!important;
+    -ms-flex: none!important;
+    flex: none!important;
+  }
+}

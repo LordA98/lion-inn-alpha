@@ -1,0 +1,64 @@
+/*
+ * General styling for the whole site
+ */
+
+/*Set width of container to 1440px for screens wider than 1440px*/
+// @media (min-width: 1440px) {
+//     .container {
+//         max-width: 1440px;
+//     }
+// }
+
+// Temp replacement for above media qeury to see if it works
+.container {
+    max-width: 1440px;
+}
+
+// Clear margins and paddings
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ * Initializers
+ *
+ */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+// Set all text color to white
+.container {
+    color: #FFF;
+}
+
+/*
+ * General Stylings
+ * Headings & Paragraphs
+ *
+ */
+
+// Headings
+.main-heading {
+    font-size: 10vmin;
+}
+.to {
+    font-size: 18pt;
+}
+.section-heading {
+    font-size: 70pt;
+}
+.minor-heading {
+    font-size: 40pt;
+}
+// Paragraphs
+p {
+    font-size: 9pt;
+}
+// Longer / Descriptive paragraphs in certain sections
+.desc {
+    line-height: 2.5;
+}

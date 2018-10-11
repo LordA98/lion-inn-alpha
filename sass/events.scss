@@ -71,9 +71,28 @@
 .events .upcoming .date .month {
     font-size: 12pt;
 }
-.events .upcoming .date .date-separator {
+.events .upcoming .date hr {
     width: 20%;
 }
 .events .upcoming .date .day {
     font-size: 30pt;
+}
+
+// Image
+.events .upcoming .image .event-image {
+    width: 100%;
+}
+
+// Text description
+.events .upcoming .desc .event-title {
+    color: $lion-purple;
+}
+.events .upcoming .info {
+    line-height: 2;
+}
+.events .upcoming .info hr {
+    width: 10%;
+}
+.events .upcoming .more p {
+    color: $lion-purple;
 }

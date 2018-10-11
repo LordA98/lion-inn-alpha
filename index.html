@@ -10,13 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="stylesheets/style.css"> -->
-    <link rel="stylesheet" href="stylesheets/home.css">
-    <link rel="stylesheet" href="stylesheets/fonts.css">
-    <link rel="stylesheet" href="stylesheets/buttons.css">
-    <link rel="stylesheet" href="stylesheets/food.css">
-    <link rel="stylesheet" href="stylesheets/events.css">
-    <link rel="stylesheet" href="stylesheets/media-queries.css">
+    <link rel="stylesheet" href="./style.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Fonts -->
@@ -223,9 +217,8 @@
                 </div>
                 <!-- NOTE - use toggleable tabs for regular events section -->
                 <div class="regular">
-                    <div class="row mb-3" style="border-bottom: 1pt solid #a6a6a6;">
-                        <h2 class="montserrat event-sub-heading">Regular Events</h2>
-                    </div>
+                    <h2 class="montserrat row event-sub-heading mb-0">Regular Events</h2>
+                    <hr class="row mt-2"/>
                     <!-- Day Titles -->
                     <div class="row week-days week-days-titles">
                         <div class="col-md-1 p-0">Monday</div>
@@ -346,38 +339,115 @@
                 </div>
 
                 <div class="upcoming mt-5">
-                    <div class="row mb-3" style="border-bottom: 1pt solid #a6a6a6;">
-                        <h2 class="montserrat event-sub-heading">Upcoming Events</h2>
-                    </div>
+                    <h2 class="row montserrat event-sub-heading mb-0">Upcoming Events</h2>
+                    <hr class="row mt-2"/>
 
+                    <!-- AUG 10 Event -->
                     <div class="row mt-3">
                         <div class="date col-lg-1">
                             <p class="month mb-0">AUG</p>
-                            <hr class="bg-light my-0 date-separator"/>
+                            <hr class="bg-light my-0"/>
                             <p class="day mt-0">10</p>
                         </div>
 
-                        <div class="col-lg-5">Image</div>
-                        <div class="col-lg-5">Text</div>
-                        <div class="col-lg-1">More</div>
+                        <div class="image col-lg-5">
+                            <img src="images/event-bg.png" alt="Placeholder Event Image" class="event-image" />
+                        </div>
+
+                        <div class="info col-lg-5">
+                            <h2 class="event-title">The Cider Festival</h2>
+                            <hr class="bg-light"/>
+                            <p>
+                                Friday 6:00pm - 10:00pm <br />
+                                Saturday 2:00pm - 11:00pm <br />
+                                Sunday 2:00pm - 11:00pm
+                            </p>
+                            <hr class="bg-light"/>
+                            <p>
+                                Music all weekend from Friday evening until Sunday evening. <br/>
+                                Camping available for tents and campervans. <br/>
+                                1 Night - <span>£5</span> <br/>
+                                3 Nights - <span>£10</span>
+                            </p>
+                        </div>
+                        <div class="more col-lg-1 d-flex flex-column">
+                            <p class="mt-auto">More Info...</p>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <!-- SEPT 28 Event -->
+                    <div class="row mt-3">
+                        <div class="date col-lg-1">
+                            <p class="month mb-0">SEPT</p>
+                            <hr class="bg-light my-0"/>
+                            <p class="day mt-0">28</p>
+                        </div>
+
+                        <div class="image col-lg-5">
+                            <img src="images/amigos.jpg" alt="Placeholder Event Image" class="event-image" />
+                        </div>
+
+                        <div class="info col-lg-5">
+                            <h2>Live Music - <span class="event-title">THE AMIGOS</span></h2>
+                            <hr class="bg-light"/>
+                            <p>
+                                9:00pm - 11:00pm
+                            </p>
+                            <hr class="bg-light"/>
+                            <p>
+                                Music from 9:00pm - 11:00pm. <br/>
+                                Get here early to get a good seat and avoid the rush. <br/>
+                                Parking available.
+                            </p>
+                        </div>
+                        <div class="more col-lg-1 d-flex flex-column">
+                            <p class="mt-auto">More Info...</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
+        </div> <!-- Container -->
+
+    </div> <!-- Container Fluid -->
+
+    <div class="container-fluid footer-bg">
+        <div class="container">
             <!-- <div class="gallery">
 
             </div> -->
 
-            <!-- <div class="footer">
-                <div class="contact">
-
+            <div class="footer py-2">
+                <div class="row contact">
+                    <div class="col-lg-1 offset-lg-2">
+                        <i class="fas fa-phone mt-2"></i>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-envelope mt-2"></i>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-map-marker-alt mt-2"></i>
+                    </div>
+                    <div class="col-lg-2 algerian">
+                        <h3>THE LION INN</h3>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fab fa-google mt-2"></i>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fab fa-tripadvisor mt-2"></i>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fab fa-facebook mt-2"></i>
+                    </div>
                 </div>
 
-                <div class="copyright">
-
+                <div class="copyright text-center">
+                    <p>Copyright 2004 - 2018 All Content of this site is property of The Lion Inn and must not be reproduced without permission.  Every effort is made to ensure the details contained on this site are correct.  However, we cannot accept responsibility for errors and omissions.</p>
                 </div>
-            </div> -->
-
+            </div>
         </div> <!-- Container -->
 
     </div> <!-- Container Fluid -->

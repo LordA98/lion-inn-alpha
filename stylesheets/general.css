@@ -1,0 +1,46 @@
+/*
+ * General styling for the whole site
+ */
+/*Set width of container to 1440px for screens wider than 1440px*/
+.container {
+  max-width: 1440px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/*
+ * Initializers
+ *
+ */
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%; }
+
+.container {
+  color: #FFF; }
+
+/*
+ * General Stylings
+ * Headings & Paragraphs
+ *
+ */
+.main-heading {
+  font-size: 10vmin; }
+
+.to {
+  font-size: 18pt; }
+
+.section-heading {
+  font-size: 70pt; }
+
+.minor-heading {
+  font-size: 40pt; }
+
+p {
+  font-size: 9pt; }
+
+.desc {
+  line-height: 2.5; }

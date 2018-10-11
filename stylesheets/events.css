@@ -56,8 +56,23 @@
 .events .upcoming .date .month {
   font-size: 12pt; }
 
-.events .upcoming .date .date-separator {
+.events .upcoming .date hr {
   width: 20%; }
 
 .events .upcoming .date .day {
   font-size: 30pt; }
+
+.events .upcoming .image .event-image {
+  width: 100%; }
+
+.events .upcoming .desc .event-title {
+  color: #673ab7; }
+
+.events .upcoming .info {
+  line-height: 2; }
+
+.events .upcoming .info hr {
+  width: 10%; }
+
+.events .upcoming .more p {
+  color: #673ab7; }
