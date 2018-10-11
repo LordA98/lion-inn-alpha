@@ -7,6 +7,7 @@ let cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 
 // Sass Task
+// Compile Sass files into CSS
 gulp.task('sass', function () {
     return gulp.src('sass/*.scss')
         .pipe(sass.sync().on('error', sass.logError))
