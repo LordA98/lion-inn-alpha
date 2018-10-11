@@ -31,6 +31,7 @@
     border-left: 1px solid black;
     border-radius: 0px;
     border-top: none;
+    background-color: #FFF;
 }
 // icons (some are images, some are font awesome icons)
 .events .regular .nav-item a i {
@@ -84,7 +85,7 @@
 }
 
 // Text description
-.events .upcoming .desc .event-title {
+.events .upcoming .info .event-title {
     color: $lion-purple;
 }
 .events .upcoming .info {
@@ -93,6 +94,9 @@
 .events .upcoming .info hr {
     width: 10%;
 }
-.events .upcoming .more p {
+
+// More Info Button
+.events .upcoming .more a {
     color: $lion-purple;
+    font-size: 10pt;
 }

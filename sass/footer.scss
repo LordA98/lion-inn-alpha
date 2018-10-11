@@ -9,9 +9,23 @@
 /*
  * CONTACT
  */
+.footer .contact a {
+    color: #FFF;
+}
 .footer .contact i {
     font-size: 15pt;
 }
+.footer .contact .nav-tabs {
+    border: 0;
+}
+.footer .contact .nav-tabs a {
+    border: 0;
+    background-color: #000;
+}
+.footer .contact .nav-tabs .nav-link.show {
+    color: #FFF !important;
+}
+
 
 /*
  * COPYRIGHT

@@ -35,6 +35,7 @@
   border-left: 1px solid #000;
   border-radius: 0;
   border-top: none;
+  background-color: #fff;
 }
 
 .events .regular .nav-item a i {
@@ -83,7 +84,7 @@
   width: 100%;
 }
 
-.events .upcoming .desc .event-title {
+.events .upcoming .info .event-title {
   color: #673ab7;
 }
 
@@ -95,8 +96,9 @@
   width: 10%;
 }
 
-.events .upcoming .more p {
+.events .upcoming .more a {
   color: #673ab7;
+  font-size: 10pt;
 }
 .montserrat {
   font-family: Montserrat,sans-serif;
@@ -165,8 +167,25 @@
   background-color: #000;
 }
 
+.footer .contact a {
+  color: #fff;
+}
+
 .footer .contact i {
   font-size: 15pt;
+}
+
+.footer .contact .nav-tabs {
+  border: 0;
+}
+
+.footer .contact .nav-tabs a {
+  border: 0;
+  background-color: #000;
+}
+
+.footer .contact .nav-tabs .nav-link.show {
+  color: #fff!important;
 }
 
 .footer .copyright p {
@@ -242,7 +261,49 @@ nav a:hover {
 .arrow i {
   font-size: 30pt;
 }
+@media (max-width:576px) {
+  .week-days .col-1,
+  .week-days .col-lg-1,
+  .week-days .col-md-1,
+  .week-days .col-sm-1 {
+    width: 100%;
+    max-width: 14.285714285714285714285714285714%!important;
+    -webkit-box-flex: 0!important;
+    -ms-flex: none!important;
+    flex: none!important;
+  }
+
+  .events .regular .nav-item a {
+    height: 50px;
+  }
+
+  .events .regular .nav-item a i {
+    font-size: 15pt;
+    margin-top: 6px!important;
+  }
+
+  .events .regular .nav-item a img {
+    height: 20px;
+    width: 20px;
+    margin-top: 6px!important;
+  }
+}
+
+@media (min-width:576px) {
+  .week-days .col-1,
+  .week-days .col-lg-1,
+  .week-days .col-md-1,
+  .week-days .col-sm-1 {
+    width: 100%;
+    max-width: 14.285714285714285714285714285714%!important;
+    -webkit-box-flex: 0!important;
+    -ms-flex: none!important;
+    flex: none!important;
+  }
+}
+
 @media (min-width:768px) {
+  .week-days .col-1,
   .week-days .col-lg-1,
   .week-days .col-md-1,
   .week-days .col-sm-1 {
@@ -255,6 +316,7 @@ nav a:hover {
 }
 
 @media (min-width:992px) {
+  .week-days .col-1,
   .week-days .col-lg-1,
   .week-days .col-md-1,
   .week-days .col-sm-1 {
@@ -267,6 +329,7 @@ nav a:hover {
 }
 
 @media (min-width:1200px) {
+  .week-days .col-1,
   .week-days .col-lg-1,
   .week-days .col-md-1,
   .week-days .col-sm-1 {

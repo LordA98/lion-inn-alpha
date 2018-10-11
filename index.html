@@ -25,7 +25,7 @@
 
     <div class="container">
         <!-- Home section / landing page -->
-        <div class="home p-0" style="color: white;">
+        <div class="home p-0 d-flex flex-column" style="color: white;">
             <!-- Header - logo and nav -->
             <nav class="navbar navbar-expand-lg mb-5 pt-3 header row">
                 <!-- Logo -->
@@ -91,8 +91,8 @@
                 </div>
             </div>
 
-            <div class="arrow row ">
-                <div class="col-12 text-center my-5 py-5">
+            <div class="arrow row mt-auto mb-4">
+                <div class="col-12 text-center">
                     <i class="fas fa-arrow-circle-down"></i>
                 </div>
             </div>
@@ -221,56 +221,57 @@
                     <hr class="row mt-2"/>
                     <!-- Day Titles -->
                     <div class="row week-days week-days-titles">
-                        <div class="col-md-1 p-0">Monday</div>
-                        <div class="col-md-1 p-0">Tuesday</div>
-                        <div class="col-md-1 p-0">Wednesday</div>
-                        <div class="col-md-1 p-0">Thursday</div>
-                        <div class="col-md-1 p-0">Frisday</div>
-                        <div class="col-md-1 p-0">Saturday</div>
-                        <div class="col-md-1 p-0">Sunday</div>
+                        <div class="col-1 p-0">Monday</div>
+                        <div class="col-1 p-0">Tuesday</div>
+                        <div class="col-1 p-0">Wednesday</div>
+                        <div class="col-1 p-0">Thursday</div>
+                        <div class="col-1 p-0">Friday</div>
+                        <div class="col-1 p-0">Saturday</div>
+                        <div class="col-1 p-0">Sunday</div>
                     </div>
 
                     <!-- Clickable Tabs -->
                     <ul class="nav nav-tabs row week-days text-center" id="myTab" role="tablist">
-                        <li class="nav-item col-lg-1 p-0">
+                        <li class="nav-item col-1 p-0">
                             <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-selected="true">
                                 <i class="fas fa-microphone-alt mt-3"></i>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 p-0">
+                        <li class="nav-item col-1 p-0">
                             <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday" aria-selected="false">
                                 <img class="mt-3" src="images/cards.png" alt="Image of Card Deck" />
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 p-0">
+                        <li class="nav-item col-1 p-0">
                             <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday" aria-selected="false">
                                 <i class="fas fa-question-circle mt-3"></i>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 p-0">
+                        <li class="nav-item col-1 p-0">
                             <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#thursday" role="tab" aria-controls="thursday" aria-selected="false">
                                 <img class="mt-3" src="images/darts.png" alt="Image of Dart Board" />
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 p-0">
+                        <li class="nav-item col-1 p-0">
                             <a class="nav-link" id="friday-tab" data-toggle="tab" href="#friday" role="tab" aria-controls="friday" aria-selected="false">
                                 <i class="fas fa-fish mt-3"></i>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 p-0">
+                        <li class="nav-item col-1 p-0">
                             <a class="nav-link" id="saturday-tab" data-toggle="tab" href="#saturday" role="tab" aria-controls="saturday" aria-selected="false">
                                 <i class="fas fa-minus mt-3"></i>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 p-0">
+                        <li class="nav-item col-1 p-0">
                             <a class="nav-link" id="sunday-tab" data-toggle="tab" href="#sunday" role="tab" aria-controls="sunday" aria-selected="false">
                                 <i class="fas fa-music mt-3"></i>
                             </a>
                         </li>
                     </ul>
+
                     <!-- Event information -->
                     <div class="tab-content row week-days" id="myTabContent" style="background-color: #FFF;">
-                        <div class="col-lg-1"></div> <!-- Empty div to help format page - align event info -->
+                        <div class="col-1"></div> <!-- Empty div to help format page - align event info -->
                         <div class="tab-pane fade show active my-4" id="monday" role="tabpanel" aria-labelledby="monday-tab">
                             <h3>Open Mic Night</h3>
                             <p class="mt-3 mb-2">
@@ -371,7 +372,7 @@
                             </p>
                         </div>
                         <div class="more col-lg-1 d-flex flex-column">
-                            <p class="mt-auto">More Info...</p>
+                            <a href="#" class="mt-auto">More Info...</a>
                         </div>
                     </div>
 
@@ -403,7 +404,7 @@
                             </p>
                         </div>
                         <div class="more col-lg-1 d-flex flex-column">
-                            <p class="mt-auto">More Info...</p>
+                            <a href="#" class="mt-auto">More Info...</a>
                         </div>
                     </div>
                 </div>
@@ -415,36 +416,65 @@
 
     <div class="container-fluid footer-bg">
         <div class="container">
+
             <!-- <div class="gallery">
 
             </div> -->
 
+
             <div class="footer py-2">
                 <div class="row contact">
-                    <div class="col-lg-1 offset-lg-2">
-                        <i class="fas fa-phone mt-2"></i>
-                    </div>
-                    <div class="col-lg-1">
-                        <i class="fas fa-envelope mt-2"></i>
-                    </div>
-                    <div class="col-lg-1">
-                        <i class="fas fa-map-marker-alt mt-2"></i>
-                    </div>
+                    <!-- Clickable Icons -->
+                    <ul class="nav nav-tabs col-lg-3 offset-lg-2 p-0" id="myTab" role="tablist">
+                        <li class="nav-item p-0">
+                            <a class="nav-link" id="phone-tab" data-toggle="tab" href="#phone" role="tab" aria-controls="phone" aria-selected="true">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0 mx-auto">
+                            <a class="nav-link" id="email-tab" data-toggle="tab" href="#email" role="tab" aria-controls="email" aria-selected="false">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0 mr-5">
+                            <a class="nav-link" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="false">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+
                     <div class="col-lg-2 algerian">
                         <h3>THE LION INN</h3>
                     </div>
                     <div class="col-lg-1">
-                        <i class="fab fa-google mt-2"></i>
+                        <a href="#"><i class="fab fa-google mt-2"></i></a>
                     </div>
                     <div class="col-lg-1">
-                        <i class="fab fa-tripadvisor mt-2"></i>
+                        <a href="#"><i class="fab fa-tripadvisor mt-2"></i></a>
                     </div>
                     <div class="col-lg-1">
-                        <i class="fab fa-facebook mt-2"></i>
+                        <a href="#"><i class="fab fa-facebook mt-2"></i></a>
                     </div>
                 </div>
 
-                <div class="copyright text-center">
+                <!-- Contact Information -->
+                <div class="tab-content row" id="myTabContent">
+                    <div class="tab-pane fade show my-4 offset-lg-2" id="phone" role="tabpanel" aria-labelledby="phone-tab">
+                        <p>01600 XXXXXX</p>
+                    </div>
+                    <div class="tab-pane fade my-4 offset-lg-3" id="email" role="tabpanel" aria-labelledby="email-tab">
+                        <p>bookings@lioninn.co.uk</p>
+                    </div>
+                    <div class="tab-pane fade my-4 offset-lg-4" id="address" role="tabpanel" aria-labelledby="address-tab">
+                        <p>
+                            The Lion Inn <br/>
+                            Trellech <br/>
+                            Monmouth
+                        </p>
+                    </div>
+                </div>
+
+                <div class="copyright text-center mt-2">
                     <p>Copyright &copy; 2004 - 2018 All Content of this site is property of The Lion Inn and must not be reproduced without permission.  Every effort is made to ensure the details contained on this site are correct.  However, we cannot accept responsibility for errors and omissions.</p>
                 </div>
             </div>
