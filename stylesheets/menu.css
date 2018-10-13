@@ -1,0 +1,83 @@
+/*
+ * Styling MENU page
+ */
+/*
+ * MENU --> HEADER
+ */
+.btn-back {
+  font-size: 12pt; }
+
+.btn-back:hover {
+  color: #FFF; }
+
+/*
+ * MENU --> NAV
+ */
+.menu .nav-item h4 {
+  color: #673ab7;
+  font-size: 15pt; }
+
+.menu .nav-item a {
+  height: 75px;
+  border-left: 1px solid #f0f0f0;
+  border-radius: 0px;
+  border-top: none;
+  background-color: #FFF; }
+
+.menu .nav-item a:hover,
+.menu .nav-item .active {
+  background-color: #673ab7;
+  border-right: 1px solid #673ab7;
+  border-left: 1px solid #673ab7;
+  border-bottom: 1px solid #673ab7; }
+  .menu .nav-item a:hover h4,
+  .menu .nav-item .active h4 {
+    color: #FFF; }
+
+.menu .nav-item a#event-tab {
+  border-right: 1px solid #f0f0f0; }
+
+/*
+ * MENU --> FILTERS
+ */
+.menu .filters {
+  color: #000;
+  background-color: #f0f0f0; }
+
+.menu .filters p {
+  display: inline;
+  font-size: 11pt; }
+
+.menu .filters i {
+  color: #FFF;
+  font-size: 14pt; }
+
+.menu .filters a:hover i {
+  color: #048304; }
+
+/*
+ * MENU --> MENU
+ */
+.menu .menu-items {
+  color: #000; }
+
+.menu .menu-items h1 {
+  color: #673ab7;
+  font-size: 40pt; }
+
+.menu .menu-items h2.item-title {
+  color: #673ab7;
+  font-size: 11pt; }
+
+.menu .menu-items p {
+  font-size: 8pt; }
+
+.menu .menu-items img {
+  height: 20px;
+  width: 20px; }
+
+.menu .menu-items p.price {
+  font-size: 11pt;
+  color: #FFF;
+  background-color: #673ab7;
+  width: 60%; }

@@ -17,7 +17,8 @@
  * Regular Events
  */
 .events .regular .week-days-titles {
-  color: #673ab7; }
+  color: #673ab7;
+  font-size: 1vmax; }
 
 .events .regular .nav-item a {
   height: 100px;

@@ -2,11 +2,19 @@
  * Media Queries for whole site
  */
 
+/*
+ * HOME Section
+ */
+@media (max-width: 1200px) {
+    .btn-transparent, .btn-phone {
+        width: 100%;
+    }
+}
+
 
 /*
- * FOOD Section
+ * EVENTS Section
  */
-
  // Creating 7 equal width columns for REGULAR EVENTS section
  // 14% = 100% / 7
 @media (max-width: 576px) {

@@ -2,7 +2,14 @@
  * Media Queries for whole site
  */
 /*
- * FOOD Section
+ * HOME Section
+ */
+@media (max-width: 1200px) {
+  .btn-transparent, .btn-phone {
+    width: 100%; } }
+
+/*
+ * EVENTS Section
  */
 @media (max-width: 576px) {
   .week-days .col-md-1,

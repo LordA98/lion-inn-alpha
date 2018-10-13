@@ -25,11 +25,11 @@
 
     <div class="container">
         <!-- Home section / landing page -->
-        <div class="home p-0 d-flex flex-column" style="color: white;">
+        <div class="home p-0 d-flex flex-column" style="color: #FFF;">
             <!-- Header - logo and nav -->
-            <nav class="navbar navbar-expand-lg mb-5 pt-3 header row">
+            <nav class="header navbar navbar-expand-lg mb-5 pt-3 row fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand ml-3 mr-5 p-0" href="#">
+                <a class="navbar-brand p-0 col-lg-1 offset-lg-2" href="#">
                     <img src="images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
                 </a>
                 <!-- Hamburger for smaller screens -->
@@ -37,25 +37,25 @@
                     <i class="fas fa-bars" style="font-size:40pt; color:#FFF;"></i>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item ml-3 mr-5">
-                            <a class="nav-link" href="#">HOME</a>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link enabled" href="#">HOME</a>
                         </li>
                         <li class="nav-item mr-5">
-                            <a class="nav-link" href="#">FOOD</a>
+                            <a class="nav-link enabled" href="#">FOOD</a>
                         </li>
                         <li class="nav-item mr-5">
                             <a class="nav-link disabled" href="#">ACCOMMODATION</a>
                         </li>
                         <li class="nav-item mr-5">
-                            <a class="nav-link" href="#">EVENTS</a>
+                            <a class="nav-link enabled" href="#">EVENTS</a>
                         </li>
                         <li class="nav-item mr-5">
                             <a class="nav-link disabled" href="#">GALLERY</a>
                         </li>
                         <li class="nav-item mr-5">
-                            <a class="nav-link" href="#">CONTACT US</a>
+                            <a class="nav-link enabled" href="#">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -64,30 +64,31 @@
                 <div class="col-lg-1"></div>
             </nav>
 
-            <div class="center row py-5">
-                <div class="col-xl-6 offset-xl-3 text-center mt-5 mb-3">
-                    <h1 class="great-vibes m-0 mr-3 main-heading">Welcome</h1>
-                    <h4 class="m-0 to">to</h4>
-                    <!-- TODO - check that this font will work when deployed -->
-                    <h1 class="algerian m-0 main-heading">The Lion Inn</h1>
-                </div>
-            </div>
-
-            <div class="buttons row bg-dark mb-5 pb-5 ">
-                <div class="col-6 col-xl-2 offset-xl-4 p-0 text-center">
-                    <button type="button" class="btn btn-lg">
-                        <i class="fas fa-utensils btn-icon"></i>
-                        <span class="px-1">Book Table</span>
-                        <i class="fas fa-angle-down btn-icon"></i>
-                    </button>
+            <div class="my-auto">
+                <div class="center row">
+                    <div class="col-xl-12 text-center mt-5 mb-3">
+                        <h1 class="great-vibes m-0 mr-3 main-heading">Welcome</h1>
+                        <h4 class="m-0 to">to</h4>
+                        <h1 class="algerian m-0 main-heading" style="width:100%;">The Lion Inn</h1>
+                    </div>
                 </div>
 
-                <div class="col-6 col-xl-2 p-0 text-center">
-                    <button type="button" class="btn btn-transparent btn-lg">
-                        <i class="fas fa-bed btn-icon"></i>
-                        <span class="px-1">Book Room</span>
-                        <i class="fas fa-angle-down btn-icon"></i>
-                    </button>
+                <div class="buttons row">
+                    <div class="col-3 order-2 offset-3 order-xl-1 col-xl-1 offset-xl-4 p-0 text-xl-right">
+                        <button type="button" class="btn btn-transparent btn-lg mt-1 m-xl-0">
+                            <i class="fas fa-utensils btn-icon"></i>
+                        </button>
+                    </div>
+                    <div class="col-6 offset-3 order-1 order-xl-2 col-xl-2 offset-xl-0 p-0 text-center text-xl-center">
+                        <button type="button" class="btn btn-lg py-1 px-2 btn-phone">
+                            <span style="font-size:19pt;">01600 860322</span>
+                        </button>
+                    </div>
+                    <div class="col-3 order-3 order-xl-3 col-xl-1 p-0 text-xl-left">
+                        <button type="button" class="btn btn-transparent btn-lg mt-1 m-xl-0">
+                            <i class="fas fa-bed btn-icon"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -128,9 +129,9 @@
                             Special menu’s are created for Easter Sunday and Mother’s Day.  Takeaway pizza’s are also available.
                         </p>
                     </div>
-                    <button type="button" class="btn btn-sm mt-3">
+                    <a class="btn btn-sm mt-3" href="html/menu.html">
                         <span class="px-1">View Menu</span>
-                    </button>
+                    </a>
                 </div>
 
                 <div class="right col-lg-3 offset-lg-1">
@@ -182,7 +183,7 @@
                         <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
                         <img class="mx-2" src="images/gluten-free.png" alt="Image of Gluten Free Icon" />
                     </div>
-                    <div class="book-now mt-4">
+                    <div class="book-now mt-4 mb-lg-0 mb-3">
                         <h4 class="great-vibes mb-0">Book Now</h4>
                         <button type="button" class="btn btn-lg mt-4 py-1 px-3">
                             <span>01600 860322</span>
@@ -339,7 +340,7 @@
 
                 </div>
 
-                <div class="upcoming mt-5">
+                <div class="upcoming mt-5 mb-0 pb-0">
                     <h2 class="row montserrat event-sub-heading mb-0">Upcoming Events</h2>
                     <hr class="row mt-2"/>
 
@@ -424,32 +425,34 @@
 
             <div class="footer py-2">
                 <div class="row contact text-center">
-                    <div class="col-lg-1 offset-lg-2">
+                    <div class="col-4  order-lg-1 col-lg-1 offset-lg-2">
                         <i class="fas fa-phone mt-2"></i>
                         <p class="mb-0 mt-1">01600 860322</p>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-4 order-lg-2 col-lg-1">
                         <i class="fas fa-envelope mt-2"></i>
-                        <p class="mb-0 mt-1">debs@globalnet.com</p>
+                        <p class="mb-0 mt-1 text-truncate">debs@globalnet.com</p>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-4 order-lg-3 col-lg-1">
                         <i class="fas fa-map-marker-alt mt-2"></i>
                         <p class="mb-0 mt-1">Get Directions</p>
                     </div>
-                    <div class="col-lg-2 algerian">
+                    <div class="col-12 order-first order-lg-4 col-lg-2 algerian">
                         <h3>THE LION INN</h3>
                     </div>
-                    <div class="col-lg-1">
-                        <a href="#"><i class="fab fa-google mt-2"></i></a>
+                    <div class="col-4 order-lg-5 col-lg-1">
+                        <a href="#">
+                            <i class="fab fa-google mt-2"></i>
+                        </a>
                         <p class="mb-0 mt-1">Google</p>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-4 order-lg-6 col-lg-1">
                         <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g552009-d732964-Reviews-Lion_Inn-Monmouth_Monmouthshire_South_Wales_Wales.html">
                             <i class="fab fa-tripadvisor mt-2"></i>
                         </a>
                         <p class="mb-0 mt-1">TripAdvisor</p>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-4 order-lg-7 col-lg-1">
                         <a href="https://www.facebook.com/TheLionInnTrellech/">
                             <i class="fab fa-facebook mt-2"></i>
                         </a>
@@ -469,5 +472,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="scripts/navbar.js"></script>
 </body>
 </html>

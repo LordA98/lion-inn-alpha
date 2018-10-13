@@ -1,0 +1,100 @@
+
+/*
+ * Styling MENU page
+ */
+
+@import 'variables';
+
+
+/*
+ * MENU --> HEADER
+ */
+.btn-back {
+    font-size: 12pt;
+}
+.btn-back:hover {
+    color:#FFF;
+}
+
+/*
+ * MENU --> NAV
+ */
+.menu .nav-item h4 {
+    color: $lion-purple;
+    font-size: 15pt;
+}
+// Day nav-tabs (boxes with icons in)
+.menu .nav-item a {
+    height: 75px;
+    border-left: 1px solid $secondary-grey;
+    border-radius: 0px;
+    border-top: none;
+    background-color: #FFF;
+}
+// Set purple bg and white font color for active & hovered tabs
+.menu .nav-item a:hover,
+.menu .nav-item .active {
+    background-color: $lion-purple;
+    border-right: 1px solid $lion-purple;
+    border-left: 1px solid $lion-purple;
+    border-bottom: 1px solid $lion-purple;
+
+    h4 {
+        color: #FFF;
+    }
+}
+// Add extra border needed on far right side
+.menu .nav-item a#event-tab {
+    border-right: 1px solid $secondary-grey;
+}
+
+
+/*
+ * MENU --> FILTERS
+ */
+.menu .filters {
+    color: #000;
+    background-color: $secondary-grey;
+}
+.menu .filters p {
+    display: inline;
+    font-size: 11pt;
+}
+.menu .filters i {
+    color: #FFF;
+    font-size: 14pt;
+}
+.menu .filters a:hover {
+    i {
+        color: #048304;
+    }
+}
+
+
+/*
+ * MENU --> MENU
+ */
+.menu .menu-items {
+    color: #000;
+}
+.menu .menu-items h1 {
+    color: $lion-purple;
+    font-size: 40pt;
+}
+.menu .menu-items h2.item-title {
+    color: $lion-purple;
+    font-size: 11pt;
+}
+.menu .menu-items p {
+    font-size: 8pt;
+}
+.menu .menu-items img {
+    height: 20px;
+    width: 20px;
+}
+.menu .menu-items p.price {
+    font-size: 11pt;
+    color: #FFF;
+    background-color: $lion-purple;
+    width: 60%;
+}

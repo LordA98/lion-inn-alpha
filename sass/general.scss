@@ -2,6 +2,8 @@
  * General styling for the whole site
  */
 
+@import 'variables';
+
 /*Set width of container to 1440px for screens wider than 1440px*/
 // @media (min-width: 1440px) {
 //     .container {
@@ -43,16 +45,16 @@ body {
 
 // Headings
 .main-heading {
-    font-size: 10vmin;
+    font-size: 6vmax;
 }
 .to {
-    font-size: 18pt;
+    font-size: 1.5vmax;
 }
 .section-heading {
-    font-size: 70pt;
+    font-size: 6vmax;
 }
 .minor-heading {
-    font-size: 40pt;
+    font-size: 4vmax;
 }
 // Paragraphs
 p {
@@ -61,4 +63,12 @@ p {
 // Longer / Descriptive paragraphs in certain sections
 .desc {
     line-height: 2.5;
+}
+
+// All buttons
+.btn {
+    background-color: $lion-purple;
+    border: 1pt solid $lion-purple;
+    border-radius: 0;
+    color: #FFF;
 }

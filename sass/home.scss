@@ -2,12 +2,14 @@
  * HOME Specific Styling
  */
 
+@import 'variables';
+
 // Height set to 100vh so that whatever the screen size is, the home page intially fills it
 .home {
     height: 100vh;
 }
 .home-bg-image {
-    background: url('./images/home-bg.png') no-repeat center center;
+    background: url('./images/home-bg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -20,14 +22,27 @@
 // Navbar
 nav a {
     font-size: 9pt;
-    color: white;
-}
-nav a:hover {
     color: #FFF;
-    text-decoration: underline !important;
+}
+nav a.enabled:hover {
+    background-color: $lion-purple;
+    border: 1pt solid $lion-purple;
+    border-radius: 0;
+    color: #FFF !important;
+}
+
+// Home page buttons
+.btn-transparent {
+    background: rgba(0,0,0,0.3);
+    border: 1pt solid #FFF;
+}
+// Font Awesome icons within buttons
+.btn-icon {
+    font-size: 15pt;
+    color: #FFF;
 }
 
 // Arrow down at bottom of home section
 .arrow i {
     font-size: 30pt;
-} 
+}

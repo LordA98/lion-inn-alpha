@@ -5,7 +5,7 @@
   height: 100vh; }
 
 .home-bg-image {
-  background: url("./images/home-bg.png") no-repeat center center;
+  background: url("./images/home-bg.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -16,11 +16,21 @@
 
 nav a {
   font-size: 9pt;
-  color: white; }
+  color: #FFF; }
 
-nav a:hover {
-  color: #FFF;
-  text-decoration: underline !important; }
+nav a.enabled:hover {
+  background-color: #673ab7;
+  border: 1pt solid #673ab7;
+  border-radius: 0;
+  color: #FFF !important; }
+
+.btn-transparent {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1pt solid #FFF; }
+
+.btn-icon {
+  font-size: 15pt;
+  color: #FFF; }
 
 .arrow i {
   font-size: 30pt; }

@@ -28,19 +28,25 @@ body {
  *
  */
 .main-heading {
-  font-size: 10vmin; }
+  font-size: 6vmax; }
 
 .to {
-  font-size: 18pt; }
+  font-size: 1.5vmax; }
 
 .section-heading {
-  font-size: 70pt; }
+  font-size: 6vmax; }
 
 .minor-heading {
-  font-size: 40pt; }
+  font-size: 4vmax; }
 
 p {
   font-size: 9pt; }
 
 .desc {
   line-height: 2.5; }
+
+.btn {
+  background-color: #673ab7;
+  border: 1pt solid #673ab7;
+  border-radius: 0;
+  color: #FFF; }

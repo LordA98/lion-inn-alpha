@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+</head>
+<body class="montserrat">
+
+    <div class="container menu">
+
+        <div class="header row mt-2">
+            <div class="col-2 my-auto p-0">
+                <a class="btn btn-lg btn-back py-1 px-2" href="../index.html">
+                    <i class="fas fa-angle-left"></i>
+                    <span class="">Back</span>
+                </a>
+            </div>
+            <a class="col-2 offset-8 text-right p-0" href="#">
+                <img src="../images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
+            </a>
+        </div>
+
+        <!-- Clickable Tabs -->
+        <ul class="nav nav-tabs row menu-options text-center mt-4" id="myTab" role="tablist">
+            <li class="nav-item col-2 p-0">
+                <a class="nav-link active p-0" id="standard-tab" data-toggle="tab" href="#standard" role="tab" aria-controls="monday" aria-selected="true">
+                    <h4 class="m-0 pt-4">Standard</h4>
+                </a>
+            </li>
+            <li class="nav-item col-2 p-0">
+                <a class="nav-link p-0" id="pizza-tab" data-toggle="tab" href="#pizza" role="tab" aria-controls="tuesday" aria-selected="false">
+                    <h4 class="m-0 pt-4">Pizza</h4>
+                </a>
+            </li>
+            <li class="nav-item col-2 p-0">
+                <a class="nav-link p-0" id="specials-tab" data-toggle="tab" href="#specials" role="tab" aria-controls="wednesday" aria-selected="false">
+                    <h4 class="m-0 pt-4">Specials</h4>
+                </a>
+            </li>
+            <li class="nav-item col-2 p-0">
+                <a class="nav-link p-0" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="thursday" aria-selected="false">
+                    <h4 class="m-0 pt-4">Desserts</h4>
+                </a>
+            </li>
+            <li class="nav-item col-2 p-0">
+                <a class="nav-link p-0" id="sunday-tab" data-toggle="tab" href="#sunday" role="tab" aria-controls="friday" aria-selected="false">
+                    <h4 class="m-0 pt-4">Sunday</h4>
+                </a>
+            </li>
+            <li class="nav-item col-2 p-0">
+                <a class="nav-link p-0" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="saturday" aria-selected="false">
+                    <h4 class="m-0 pt-4">Christmas Menu</h4>
+                </a>
+            </li>
+        </ul>
+
+        <div class="filters row py-2">
+            <div class="gluten col-2 offset-1">
+                <a href=""><i class="fas fa-check-circle mr-1"></i></a>
+                <p>Gluten Free Only</p>
+            </div>
+
+            <div class="vegetarian">
+                <a href=""><i class="fas fa-check-circle mr-1"></i></a>
+                <p>Vegetarian Only</p>
+            </div>
+        </div>
+
+
+        <!-- Menu information (based off of which nav-tab is selected) -->
+        <div class="menu-items tab-content mt-5" id="myTabContent" style="background-color: #FFF;">
+            <div class="tab-pane fade show active" id="standard" role="tabpanel" aria-labelledby="standard-tab">
+                <div class="row">
+                    <div class="starters col-lg-6">
+                        <h1 class="great-vibes m-0">Starters</h1>
+                        <hr class="m-0"/>
+
+                        <!-- Soup -->
+                        <div class="item row mt-2">
+                            <div class="col-lg-8">
+                                <h2 class="item-title">Soup of the Day</h2>
+                                <p>Homemade soup of the day served with crusty bread.</p>
+                            </div>
+                            <div class="col-lg-2 mt-2">
+                                <img class="mx-2" src="../images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                            </div>
+                            <div class="col-lg-2 pr-0 mt-2 text-center">
+                                <p class="price ml-4 py-1 px-2">£5.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Pan Fried Prawns -->
+                        <div class="item row mt-2">
+                            <div class="col-lg-8">
+                                <h2 class="item-title">Pan Fried Prawns</h2>
+                                <p>Pan fried king prawns cooked in olive oil and garlic served with bread.</p>
+                            </div>
+                            <div class="col-lg-2 mt-2"></div>
+                            <div class="col-lg-2 pr-0 mt-2 text-center">
+                                <p class="price ml-4 py-1 px-2">£7.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Pan Fried Pigeon -->
+                        <div class="item row mt-2">
+                            <div class="col-lg-8">
+                                <h2 class="item-title">Pan Fried Pigeon</h2>
+                                <p>Pan fried pigeon breast with red onions, horseradish and red wine.</p>
+                            </div>
+                            <div class="col-lg-2 mt-2"></div>
+                            <div class="col-lg-2 pr-0 mt-2 text-center">
+                                <p class="price ml-4 py-1 px-2">£7.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Pan Fried Pigeon -->
+                        <div class="item row mt-2">
+                            <div class="col-lg-8">
+                                <h2 class="item-title">Pate</h2>
+                                <p>Rich liver pate and toast.</p>
+                            </div>
+                            <div class="col-lg-2 mt-2"></div>
+                            <div class="col-lg-2 pr-0 mt-2 text-center">
+                                <p class="price ml-4 py-1 px-2">£7.40</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Platter -->
+                        <div class="item row mt-2">
+                            <div class="col-lg-8">
+                                <h2 class="item-title">Lion Platter</h2>
+                                <p>Sharer for 2 people.  King prawns, pigeon, onion rings, potato wedges, spicy chicken goujons and crusty bread.</p>
+                            </div>
+                            <div class="col-lg-2 mt-2"></div>
+                            <div class="col-lg-2 pr-0 mt-2 text-center">
+                                <p class="price ml-4 py-1 px-2">£16.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                    </div>
+
+                    <div class="sides col-lg-4 offset-lg-2">
+                        <h1 class="great-vibes">Sides</h1>
+                        <hr class="mt-1" />
+
+                        <!-- Trellech Tatties -->
+                        <div class="item row mt-2">
+                            <div class="col-lg-8">
+                                <h2 class="item-title">Trellech Tatties</h2>
+                                <p>Cheese</p>
+                                <p>Cajun Style</p>
+                            </div>
+                            <div class="col-lg-2 mt-2"></div>
+                            <div class="col-lg-2 pr-0 mt-2 text-center">
+                                <p class="price ml-4 py-1 px-2">£5.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade my-4" id="pizza" role="tabpanel" aria-labelledby="pizza-tab">
+                <h3>Cribb</h3>
+            </div>
+            <div class="tab-pane fade my-4" id="specials" role="tabpanel" aria-labelledby="specials-tab">
+                <h3>Quiz</h3>
+            </div>
+            <div class="tab-pane fade my-4" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                <h3>Darts</h3>
+            </div>
+            <div class="tab-pane fade my-4" id="sunday" role="tabpanel" aria-labelledby="sunday-tab">
+                <h3>Fish on Friday</h3>
+            </div>
+            <div class="tab-pane fade my-4" id="events" role="tabpanel" aria-labelledby="events-tab">
+                <h3>No Regular Events</h3>
+            </div>
+        </div>
+
+    </div> <!-- End container -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
