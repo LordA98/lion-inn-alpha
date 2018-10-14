@@ -23,13 +23,17 @@
 nav a {
     font-size: 9pt;
     color: #FFF;
+    text-transform: uppercase;
 }
 nav a.enabled:hover {
     background-color: $lion-purple;
-    border: 1pt solid $lion-purple;
     border-radius: 0;
     color: #FFF !important;
 }
+nav .mobile-footer {
+    display: none;
+}
+
 
 // Home page buttons
 .btn-transparent {

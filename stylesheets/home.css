@@ -16,13 +16,16 @@
 
 nav a {
   font-size: 9pt;
-  color: #FFF; }
+  color: #FFF;
+  text-transform: uppercase; }
 
 nav a.enabled:hover {
   background-color: #673ab7;
-  border: 1pt solid #673ab7;
   border-radius: 0;
   color: #FFF !important; }
+
+nav .mobile-footer {
+  display: none; }
 
 .btn-transparent {
   background: rgba(0, 0, 0, 0.3);

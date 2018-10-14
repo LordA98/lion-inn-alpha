@@ -251,13 +251,17 @@ p {
 nav a {
   font-size: 9pt;
   color: #fff;
+  text-transform: uppercase;
 }
 
 nav a.enabled:hover {
   background-color: #673ab7;
-  border: 1pt solid #673ab7;
   border-radius: 0;
   color: #fff!important;
+}
+
+nav .mobile-footer {
+  display: none;
 }
 
 .btn-transparent {
@@ -277,6 +281,47 @@ nav a.enabled:hover {
   .btn-phone,
   .btn-transparent {
     width: 100%;
+  }
+}
+
+@media (max-width:992px) {
+  #navbarSupportedContent {
+    background-color: #000;
+    padding: 0;
+    height: 100vh;
+  }
+
+  #navbarSupportedContent li a {
+    color: #000;
+    height: 11vh;
+    font-size: 16pt;
+    text-transform: none;
+    padding: 23px 0 0 60px;
+  }
+
+  #navbarSupportedContent .collapse-white {
+    color: #673ab7;
+    background-color: #fff;
+  }
+
+  #navbarSupportedContent .collapse-purple {
+    color: #fff;
+    background-color: #673ab7;
+  }
+
+  #navbarSupportedContent .collapse-hide {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+
+  #navbarSupportedContent .mobile-footer {
+    display: block;
+    background-color: #000;
+  }
+
+  #navbarSupportedContent .mobile-footer h3 {
+    font-size: 25pt;
   }
 }
 

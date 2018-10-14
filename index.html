@@ -29,7 +29,7 @@
             <!-- Header - logo and nav -->
             <nav class="header navbar navbar-expand-lg mb-5 pt-3 row fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand p-0 col-lg-1 offset-lg-2" href="#">
+                <a class="navbar-brand p-0 col-6 col-lg-1 offset-lg-2" href="#">
                     <img src="images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
                 </a>
                 <!-- Hamburger for smaller screens -->
@@ -39,24 +39,69 @@
 
                 <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item mr-5">
-                            <a class="nav-link enabled" href="#">HOME</a>
+                        <li class="nav-item mr-lg-5">
+                            <a class="nav-link enabled collapse-hide" href="#">Home</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link enabled" href="#">FOOD</a>
+                        <li class="nav-item mr-lg-5">
+                            <a class="nav-link disabled collapse-purple" href="#">About Us</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link disabled" href="#">ACCOMMODATION</a>
+                        <li class="nav-item mr-lg-5">
+                            <a class="nav-link enabled collapse-white" href="#">Food</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link enabled" href="#">EVENTS</a>
+                        <li class="nav-item mr-lg-5">
+                            <a class="nav-link disabled collapse-purple" href="#">Accommodation</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link disabled" href="#">GALLERY</a>
+                        <li class="nav-item mr-lg-5">
+                            <a class="nav-link enabled collapse-white" href="#">Events</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link enabled" href="#">CONTACT US</a>
+                        <li class="nav-item mr-lg-5">
+                            <a class="nav-link disabled collapse-purple" href="#">Gallery</a>
                         </li>
+                        <li class="nav-item mr-lg-5">
+                            <a class="nav-link enabled collapse-hide" href="#">Contact Us</a>
+                        </li>
+                        <!-- Footer just for mobile hamburger -->
+                        <div class="footer mobile-footer py-2">
+                            <div class="row contact text-center">
+                                <div class="col-4  order-lg-1 col-lg-1 offset-lg-2">
+                                    <i class="fas fa-phone mt-2"></i>
+                                    <p class="mb-0 mt-1">01600 860322</p>
+                                </div>
+                                <div class="col-4 order-lg-2 col-lg-1">
+                                    <i class="fas fa-envelope mt-2"></i>
+                                    <p class="mb-0 mt-1 text-truncate">debs@globalnet.com</p>
+                                </div>
+                                <div class="col-4 order-lg-3 col-lg-1">
+                                    <i class="fas fa-map-marker-alt mt-2"></i>
+                                    <p class="mb-0 mt-1">Get Directions</p>
+                                </div>
+                                <div class="col-12 order-first order-lg-4 col-lg-2 algerian">
+                                    <h3>THE LION INN</h3>
+                                </div>
+                                <div class="col-4 order-lg-5 col-lg-1">
+                                    <a href="#">
+                                        <i class="fab fa-google mt-2"></i>
+                                    </a>
+                                    <p class="mb-0 mt-1">Google</p>
+                                </div>
+                                <div class="col-4 order-lg-6 col-lg-1">
+                                    <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g552009-d732964-Reviews-Lion_Inn-Monmouth_Monmouthshire_South_Wales_Wales.html">
+                                        <i class="fab fa-tripadvisor mt-2"></i>
+                                    </a>
+                                    <p class="mb-0 mt-1">TripAdvisor</p>
+                                </div>
+                                <div class="col-4 order-lg-7 col-lg-1">
+                                    <a href="https://www.facebook.com/TheLionInnTrellech/">
+                                        <i class="fab fa-facebook mt-2"></i>
+                                    </a>
+                                    <p class="mb-0 mt-1">Facebook</p>
+                                </div>
+                            </div>
+
+                            <div class="copyright text-center mt-3">
+                                <p class="mb-0">Copyright &copy; 2004 - 2018 All Content of this site is property of The Lion Inn and must not be reproduced without permission.  Every effort is made to ensure the details contained on this site are correct.  However, we cannot accept responsibility for errors and omissions.</p>
+                            </div>
+                        </div> <!-- End Footer -->
                     </ul>
                 </div>
 
@@ -209,10 +254,10 @@
     </div> <!-- Container -->
 
     <!-- Container fluid used just so that I can have full width background -->
-    <div class="container-fluid bg-light">
+    <div class="container-fluid bg-light pb-4">
         <div class="container">
 
-            <div class="events my-5 pt-5">
+            <div class="events mt-5 pt-5">
                 <div class="title text-center">
                     <h1 class="great-vibes section-heading">Events</h1>
                 </div>
