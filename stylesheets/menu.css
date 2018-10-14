@@ -65,7 +65,7 @@
   color: #673ab7;
   font-size: 40pt; }
 
-.menu .menu-items h2.item-title {
+.menu .menu-items h3.item-title {
   color: #673ab7;
   font-size: 11pt; }
 
@@ -81,3 +81,11 @@
   color: #FFF;
   background-color: #673ab7;
   width: 60%; }
+
+.menu .menu-items p.sub-price {
+  color: #673ab7; }
+
+.menu .menu-items h2.main-sub-heading {
+  background-color: #673ab7;
+  color: #FFF;
+  font-size: 14pt; }

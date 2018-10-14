@@ -81,7 +81,7 @@
     color: $lion-purple;
     font-size: 40pt;
 }
-.menu .menu-items h2.item-title {
+.menu .menu-items h3.item-title {
     color: $lion-purple;
     font-size: 11pt;
 }
@@ -97,4 +97,12 @@
     color: #FFF;
     background-color: $lion-purple;
     width: 60%;
+}
+.menu .menu-items p.sub-price {
+    color: $lion-purple;
+}
+.menu .menu-items h2.main-sub-heading {
+    background-color: $lion-purple;
+    color: #FFF;
+    font-size: 14pt;
 }
