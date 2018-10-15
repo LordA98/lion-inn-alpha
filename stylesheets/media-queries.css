@@ -16,9 +16,8 @@
   #navbarSupportedContent li a {
     color: #000;
     height: 11vh;
-    font-size: 16pt;
-    text-transform: none;
-    padding: 23px 0 0 60px; }
+    font-size: 5vw;
+    text-transform: none; }
   #navbarSupportedContent .collapse-white {
     color: #673ab7;
     background-color: #FFF; }
@@ -33,7 +32,11 @@
     display: block;
     background-color: #000; }
     #navbarSupportedContent .mobile-footer h3 {
-      font-size: 25pt; } }
+      font-size: 8vw; }
+    #navbarSupportedContent .mobile-footer i {
+      font-size: 5vw; }
+    #navbarSupportedContent .mobile-footer p {
+      font-size: 2vw; } }
 
 /*
  * EVENTS Section

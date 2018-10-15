@@ -294,9 +294,8 @@ nav .mobile-footer {
   #navbarSupportedContent li a {
     color: #000;
     height: 11vh;
-    font-size: 16pt;
+    font-size: 5vw;
     text-transform: none;
-    padding: 23px 0 0 60px;
   }
 
   #navbarSupportedContent .collapse-white {
@@ -321,7 +320,15 @@ nav .mobile-footer {
   }
 
   #navbarSupportedContent .mobile-footer h3 {
-    font-size: 25pt;
+    font-size: 8vw;
+  }
+
+  #navbarSupportedContent .mobile-footer i {
+    font-size: 5vw;
+  }
+
+  #navbarSupportedContent .mobile-footer p {
+    font-size: 2vw;
   }
 }
 
