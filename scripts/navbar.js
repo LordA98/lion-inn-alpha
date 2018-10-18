@@ -5,7 +5,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
 
-        if (scroll > 900) {
+        if (scroll > 800) {
             $(".header").css("background" , "#FFF");
             $(".header a.enabled").css("color" , "#000");
         }

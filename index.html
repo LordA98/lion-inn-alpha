@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
 
-<body class="montserrat">
+<body class="montserrat" data-spy="scroll" data-target="#navbar-main">
 
     <!-- Background image at top of page -->
     <div class="home-bg-image"></div>
@@ -27,7 +27,7 @@
         <!-- Home section / landing page -->
         <div class="home p-0 d-flex flex-column" style="color: #FFF;">
             <!-- Header - logo and nav -->
-            <nav class="header navbar navbar-expand-lg mb-5 pt-3 row fixed-top">
+            <nav id="navbar-main" class="header navbar navbar-expand-lg mb-5 pt-3 row fixed-top">
                 <!-- Logo -->
                 <a class="navbar-brand p-0 col-6 col-lg-1 offset-lg-2" href="#">
                     <img src="images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
@@ -43,22 +43,22 @@
                             <a class="nav-link enabled collapse-hide" href="#">Home</a>
                         </li>
                         <li class="nav-item mr-lg-5">
-                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#">About Us</a>
+                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#about-us">About Us</a>
                         </li>
                         <li class="nav-item mr-lg-5">
-                            <a class="nav-link enabled collapse-white pt-4 pt-lg-2 pl-5 pl-lg-2" href="#">Food</a>
+                            <a class="nav-link enabled collapse-white pt-4 pt-lg-2 pl-5 pl-lg-2" href="#food">Food</a>
                         </li>
                         <li class="nav-item mr-lg-5">
-                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#">Accommodation</a>
+                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#accommodation">Accommodation</a>
                         </li>
                         <li class="nav-item mr-lg-5">
-                            <a class="nav-link enabled collapse-white pt-4 pt-lg-2 pl-5 pl-lg-2" href="#">Events</a>
+                            <a class="nav-link enabled collapse-white pt-4 pt-lg-2 pl-5 pl-lg-2" href="#events">Events</a>
                         </li>
                         <li class="nav-item mr-lg-5">
-                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#">Gallery</a>
+                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item mr-lg-5">
-                            <a class="nav-link enabled collapse-hide" href="#">Contact Us</a>
+                            <a class="nav-link enabled collapse-hide" href="#footer">Contact Us</a>
                         </li>
                         <!-- Footer just for mobile hamburger -->
                         <div class="footer mobile-footer py-2">
@@ -121,7 +121,11 @@
                 <div class="buttons row">
                     <div class="col-3 order-2 offset-3 order-xl-1 col-xl-1 offset-xl-4 p-0 text-xl-right">
                         <button type="button" class="btn btn-transparent btn-lg mt-1 m-xl-0">
-                            <i class="fas fa-utensils btn-icon"></i>
+                            <nav id="navbar-main">
+                                <a href="#food">
+                                    <i class="fas fa-utensils btn-icon"></i>
+                                </a>
+                            </nav>
                         </button>
                     </div>
                     <div class="col-6 offset-3 order-1 order-xl-2 col-xl-2 offset-xl-0 p-0 text-center text-xl-center">
@@ -131,7 +135,11 @@
                     </div>
                     <div class="col-3 order-3 order-xl-3 col-xl-1 p-0 text-xl-left">
                         <button type="button" class="btn btn-transparent btn-lg mt-1 m-xl-0">
-                            <i class="fas fa-bed btn-icon"></i>
+                            <nav id="navbar-main">
+                                <a href="#accommodation">
+                                    <i class="fas fa-bed btn-icon"></i>
+                                </a>
+                            </nav>
                         </button>
                     </div>
                 </div>
@@ -144,7 +152,7 @@
             </div>
         </div>
 
-        <!-- <div class="about-us">
+        <!-- <div id="about-us" class="about-us">
 
         </div> -->
 
@@ -155,7 +163,7 @@
 
     <div class="container">
 
-        <div class="food my-5">
+        <div id="food" class="food my-5">
             <div class="title text-center">
                 <h1 class="great-vibes section-heading">Food</h1>
             </div>
@@ -238,7 +246,7 @@
             </div>
         </div>
 
-        <!-- <div class="accommodation">
+        <!-- <div id="accommodation" class="accommodation">
             <div class="cottage">
 
             </div>
@@ -257,7 +265,7 @@
     <div class="container-fluid bg-light pb-4">
         <div class="container">
 
-            <div class="events mt-5 pt-5">
+            <div id="events" class="events mt-5 pt-5">
                 <div class="title text-center">
                     <h1 class="great-vibes section-heading">Events</h1>
                 </div>
@@ -463,12 +471,12 @@
     <div class="container-fluid footer-bg">
         <div class="container">
 
-            <!-- <div class="gallery">
+            <!-- <div id="gallery" class="gallery">
 
             </div> -->
 
 
-            <div class="footer py-2">
+            <div id="footer" class="footer py-2">
                 <div class="row contact text-center">
                     <div class="col-4  order-lg-1 col-lg-1 offset-lg-2">
                         <i class="fas fa-phone mt-2"></i>
