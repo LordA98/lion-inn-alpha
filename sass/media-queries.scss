@@ -62,8 +62,11 @@
 /*
  * EVENTS Section
  */
- // Creating 7 equal width columns for REGULAR EVENTS section
- // 14% = 100% / 7
+
+/*
+ * Creating 7 equal width columns for REGULAR EVENTS section
+ * 14% = 100% / 7
+ */
 @media (max-width: 576px) {
     .week-days .col-md-1,
     .week-days .col-sm-1,
@@ -125,6 +128,66 @@
     .week-days .col-1 {
         width: 14.285714285714285714285714285714%;
         max-width: 14.285714285714285714285714285714% !important;
+        flex:none !important;
+    }
+}
+
+
+/*
+ * MENU Section
+ */
+
+/*
+ * Creating 5 equal width columns for the menu navigation
+ * 20% = 100% / 5
+ */
+@media (max-width: 576px) {
+    .menu-options .col-md-1,
+    .menu-options .col-sm-1,
+    .menu-options .col-lg-1,
+    .menu-options .col-1  {
+        width: 100%;
+        max-width: 20% !important;
+        flex:none !important;
+    }
+}
+@media (min-width: 576px) {
+    .menu-options .col-md-1,
+    .menu-options .col-sm-1,
+    .menu-options .col-lg-1,
+    .menu-options .col-1  {
+        width: 100%;
+        max-width: 20% !important;
+        flex:none !important;
+    }
+}
+@media (min-width: 768px) {
+    .menu-options .col-md-1,
+    .menu-options .col-sm-1,
+    .menu-options .col-lg-1,
+    .menu-options .col-1  {
+        width: 100%;
+        max-width: 20% !important;
+        flex:none !important;
+    }
+}
+@media (min-width: 992px) {
+    .menu-options .col-md-1,
+    .menu-options .col-sm-1,
+    .menu-options .col-lg-1,
+    .menu-options .col-1 {
+        width: 20%;
+        max-width: 20% !important;
+        flex:none !important;
+    }
+}
+@media (min-width: 1200px) {
+    .menu-options .col-md-1,
+    .menu-options .col-sm-1,
+    .menu-options .col-lg-1,
+    .menu-options .col-1 {
+        width: 20%;
+        max-width: 20% !important;
         flex:none !important;
     }
 }

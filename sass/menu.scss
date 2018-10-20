@@ -60,14 +60,20 @@
     display: inline;
     font-size: 11pt;
 }
-.menu .filters i {
-    color: #FFF;
-    font-size: 14pt;
-}
-.menu .filters a:hover {
-    i {
-        color: #048304;
-    }
+// NOTE - following CSS was for tick filter icon
+// .menu .filters i {
+//     color: #FFF;
+//     font-size: 14pt;
+// }
+// .menu .filters a:hover {
+//     i {
+//         color: #048304;
+//     }
+// }
+.menu .filters img {
+    display: inline;
+    height: 15px;
+    width: 15px;
 }
 
 
