@@ -4,6 +4,10 @@
 /*
  * HOME Section
  */
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 15vw; } }
+
 @media (max-width: 1200px) {
   .btn-transparent, .btn-phone {
     width: 100%; } }
@@ -102,6 +106,18 @@
 /*
  * MENU Section
  */
+@media (max-width: 992px) {
+  .menu-options h4 {
+    font-size: 3.5vw !important; } }
+
+@media (max-width: 576px) {
+  .menu-items h3 {
+    font-size: 3.5vw !important; }
+  .menu-items p {
+    font-size: 2.5vw !important; }
+  .menu-items p.price {
+    font-size: 3.5vw !important; } }
+
 /*
  * Creating 5 equal width columns for the menu navigation
  * 20% = 100% / 5
