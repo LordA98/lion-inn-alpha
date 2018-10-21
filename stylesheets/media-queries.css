@@ -46,6 +46,14 @@
  * EVENTS Section
  */
 /*
+ * Add padding left to REGULAR EVENTS information section
+ * Once screen is below 700px wide, it removes the padding-left
+ */
+@media (max-width: 700px) {
+  .tab-content {
+    padding-left: 20px; } }
+
+/*
  * Creating 7 equal width columns for REGULAR EVENTS section
  * 14% = 100% / 7
  */

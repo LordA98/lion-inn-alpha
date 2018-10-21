@@ -1,4 +1,3 @@
-
 // Change navbar background colour and font colour
 // Once navbar gets to FOOD section
 $(document).ready(function(){
