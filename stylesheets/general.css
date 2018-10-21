@@ -1,7 +1,6 @@
 /*
  * General styling for the whole site
  */
-/*Set width of container to 1440px for screens wider than 1440px*/
 .container {
   max-width: 1440px; }
 

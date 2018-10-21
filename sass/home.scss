@@ -33,6 +33,14 @@ nav a.enabled:hover {
 nav .mobile-footer {
     display: none;
 }
+// When hamburger icon is clicked
+// Set navbar bg to white
+.clicked {
+    background-color: #FFF !important;
+}
+.purple-hamburger {
+    color: $lion-purple !important;
+}
 
 
 // Home page buttons

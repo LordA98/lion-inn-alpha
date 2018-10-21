@@ -264,6 +264,14 @@ nav .mobile-footer {
   display: none;
 }
 
+.clicked {
+  background-color: #fff!important;
+}
+
+.purple-hamburger {
+  color: #673ab7!important;
+}
+
 .btn-transparent {
   background: rgba(0,0,0,.3);
   border: 1pt solid #fff;
@@ -305,7 +313,7 @@ nav .mobile-footer {
   }
 
   #navbarSupportedContent .collapse-white {
-    color: #673ab7;
+    color: #673ab7!important;
     background-color: #fff;
   }
 
@@ -424,7 +432,7 @@ nav .mobile-footer {
   }
 }
 
-@media (max-width:992px) {
+@media (max-width:576px) {
   .menu-options h4 {
     font-size: 3.5vw!important;
   }

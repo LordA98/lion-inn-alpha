@@ -27,6 +27,12 @@ nav a.enabled:hover {
 nav .mobile-footer {
   display: none; }
 
+.clicked {
+  background-color: #FFF !important; }
+
+.purple-hamburger {
+  color: #673ab7 !important; }
+
 .btn-transparent {
   background: rgba(0, 0, 0, 0.3);
   border: 1pt solid #FFF; }

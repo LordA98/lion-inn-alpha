@@ -4,6 +4,15 @@ Montserrant
 Great Vibes
 Algerian Regular
 
+PLUGINS:
+- All-in-One WP Migration - security and backups
+- Really Simple SSL (https://www.youtube.com/watch?v=eRO4WZyKYZA - FREE SSL? @3-4 mins)
+- WPS Hide Login
+- Smush Image Compression
+- Yoast SEO
+- FaceBook Messenger - not for facebook related stuff but use it for Google Maps foo (unless I can find a better one)
+
+
 CAN ONLY USE MySQL
 
 Does the copyright need to change from 2014 to 2018?
