@@ -6,7 +6,9 @@
  */
 @media (max-width: 576px) {
   .main-heading {
-    font-size: 15vw; } }
+    font-size: 15vw; }
+  .phone-no {
+    font-size: 6vw; } }
 
 @media (max-width: 1200px) {
   .btn-transparent, .btn-phone {
@@ -52,6 +54,15 @@
 @media (max-width: 700px) {
   .tab-content {
     padding-left: 20px; } }
+
+@media (max-width: 576px) {
+  .events .upcoming .info p,
+  .events .upcoming .more a,
+  .events .upcoming .date .month {
+    font-size: 3vw; }
+  .events .upcoming .info .event-title,
+  .events .upcoming .date .day {
+    font-size: 6vw; } }
 
 /*
  * Creating 7 equal width columns for REGULAR EVENTS section

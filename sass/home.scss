@@ -21,7 +21,7 @@
 
 // Navbar
 nav a {
-    font-size: 9pt;
+    font-size: 0.7vw;//9pt;
     color: #FFF;
     text-transform: uppercase;
 }
@@ -44,6 +44,10 @@ nav .mobile-footer {
 
 
 // Home page buttons
+.phone-no {
+    font-size: 19pt;
+}
+// Cutlery icon and bed icon
 .btn-transparent {
     background: rgba(0,0,0,0.3);
     border: 1pt solid #FFF;

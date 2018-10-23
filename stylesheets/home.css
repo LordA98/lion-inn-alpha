@@ -15,7 +15,7 @@
   height: 100%; }
 
 nav a {
-  font-size: 9pt;
+  font-size: 0.7vw;
   color: #FFF;
   text-transform: uppercase; }
 
@@ -32,6 +32,9 @@ nav .mobile-footer {
 
 .purple-hamburger {
   color: #673ab7 !important; }
+
+.phone-no {
+  font-size: 19pt; }
 
 .btn-transparent {
   background: rgba(0, 0, 0, 0.3);

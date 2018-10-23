@@ -14,6 +14,10 @@
     .main-heading {
         font-size: 15vw;
     }
+
+    .phone-no {
+        font-size: 6vw;
+    }
 }
 // When screen width gets below 1200px
 // CHange size of buttons in HOME section
@@ -80,6 +84,19 @@
 @media (max-width: 700px) {
     .tab-content {
         padding-left: 20px;
+    }
+}
+
+// Font sizes on phone devices
+@media (max-width: 576px) {
+    .events .upcoming .info p,
+    .events .upcoming .more a,
+    .events .upcoming .date .month {
+        font-size: 3vw;
+    }
+    .events .upcoming .info .event-title,
+    .events .upcoming .date .day {
+        font-size: 6vw;
     }
 }
 

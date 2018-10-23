@@ -73,7 +73,7 @@
   color: #673ab7;
 }
 
-.events .upcoming .info {
+.events .upcoming .info p {
   line-height: 2;
 }
 
@@ -250,7 +250,7 @@ p {
 }
 
 nav a {
-  font-size: 9pt;
+  font-size: .7vw;
   color: #fff;
   text-transform: uppercase;
 }
@@ -273,6 +273,10 @@ nav .mobile-footer {
   color: #673ab7!important;
 }
 
+.phone-no {
+  font-size: 19pt;
+}
+
 .btn-transparent {
   background: rgba(0,0,0,.3);
   border: 1pt solid #fff;
@@ -289,6 +293,10 @@ nav .mobile-footer {
 @media (max-width:576px) {
   .main-heading {
     font-size: 15vw;
+  }
+
+  .phone-no {
+    font-size: 6vw;
   }
 }
 
@@ -350,6 +358,19 @@ nav .mobile-footer {
 @media (max-width:700px) {
   .tab-content {
     padding-left: 20px;
+  }
+}
+
+@media (max-width:576px) {
+  .events .upcoming .date .month,
+  .events .upcoming .info p,
+  .events .upcoming .more a {
+    font-size: 3vw;
+  }
+
+  .events .upcoming .date .day,
+  .events .upcoming .info .event-title {
+    font-size: 6vw;
   }
 }
 
