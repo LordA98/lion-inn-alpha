@@ -99,6 +99,19 @@
         font-size: 6vw;
     }
 }
+// Resize nav-tabs (boxes, icons and images)
+@media (max-width: 768px) {
+    .events .regular .nav-item a {
+        height: 50px;
+    }
+    .events .regular .nav-item a i {
+        font-size: 4vw;
+    }
+    .events .regular .nav-item a img {
+        height: 4vw;
+        width: 4vw;
+    }
+}
 
 
 /*
@@ -113,20 +126,6 @@
         width: 100%;
         max-width: 14.285714285714285714285714285714% !important;
         flex:none !important;
-    }
-
-    // Resize nav-tabs (boxes, icons and images)
-    .events .regular .nav-item a {
-        height: 50px;
-    }
-    .events .regular .nav-item a i {
-        font-size: 15pt;
-        margin-top: 6px !important;
-    }
-    .events .regular .nav-item a img {
-        height: 20px;
-        width: 20px;
-        margin-top: 6px !important;
     }
 }
 @media (min-width: 576px) {
@@ -170,6 +169,16 @@
     }
 }
 
+/*
+ * FOOTER Section
+ */
+// Scale THE LION INN title properly between below widths (to prevent it breaking to a newline)
+@media (min-width: 992px) and (max-width: 1221px) {
+    .footer .contact h3 {
+        font-size: 2.1vw;
+    }
+}
+
 
 /*
  * MENU Section
@@ -178,6 +187,10 @@
 @media (max-width: 576px) {
     .menu-options h4 {
         font-size: 3.5vw !important;
+    }
+
+    .menu .nav-item a {
+        height: 50px !important;
     }
 }
 
