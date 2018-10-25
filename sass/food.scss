@@ -3,21 +3,6 @@
 @import 'variables';
 
 /*
- * Media Queries
- */
-// Hide menu image when screen gets to mobile size
-@media (max-width: 992px) {
-    .food .menu .right {
-        visibility: hidden;
-        height: 0;
-    }
-}
-
-/*
- * CSS
- */
-
-/*
  * FOOD section
  */
 .food {

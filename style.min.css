@@ -96,13 +96,6 @@
 .algerian {
   font-family: 'Algerian Regular',sans-serif;
 }
-@media (max-width:992px) {
-  .food .menu .right {
-    visibility: hidden;
-    height: 0;
-  }
-}
-
 .food {
   color: #000;
 }
@@ -296,18 +289,31 @@ nav .mobile-footer {
   }
 
   .phone-no {
-    font-size: 6vw;
+    font-size: 6.5vw;
+  }
+}
+
+@media (min-width:576px) and (max-width:1200px) {
+  .phone-no {
+    font-size: 4vw;
+  }
+
+  .buttons .btn-icon {
+    font-size: 3vw;
   }
 }
 
 @media (max-width:1200px) {
-  .btn-phone,
-  .btn-transparent {
+  .btn-phone {
     width: 100%;
+  }
+
+  .btn-transparent {
+    width: 90%;
   }
 }
 
-@media (max-width:992px) {
+@media (max-width:991px) {
   #navbarSupportedContent {
     background-color: #000;
     padding: 0;
@@ -352,6 +358,13 @@ nav .mobile-footer {
 
   #navbarSupportedContent .mobile-footer p {
     font-size: 2vw;
+  }
+}
+
+@media (max-width:992px) {
+  .food .menu .right {
+    visibility: hidden;
+    height: 0;
   }
 }
 

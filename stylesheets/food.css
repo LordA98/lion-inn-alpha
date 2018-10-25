@@ -1,15 +1,4 @@
 /*
- * Media Queries
- */
-@media (max-width: 992px) {
-  .food .menu .right {
-    visibility: hidden;
-    height: 0; } }
-
-/*
- * CSS
- */
-/*
  * FOOD section
  */
 .food {
