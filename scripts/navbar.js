@@ -2,6 +2,25 @@
 $(document).ready(function(){
     var lion_purple = "#673ab7";
 
+    // Add / Remove 'd-flex flex-column' classes from navbar based on screen width
+    // They are needed above 1200px to center nav but cause issues below 1200px
+    var toggleFlexClasses = function() {
+        var width = $(window).width();
+
+        if (width < 1200) {
+            $("#navbarSupportedContent").removeClass("d-flex flex-column");
+        }
+        else {
+            $("#navbarSupportedContent").addClass("d-flex flex-column");
+        }
+    }
+
+    $(window).resize(function() {
+        toggleFlexClasses();
+    });
+    // Check size and classes when page loads
+    toggleFlexClasses();
+
     // Change navbar background colour, font colour and hamburger icon
     // Once navbar gets to FOOD section
     $(window).scroll(function(){

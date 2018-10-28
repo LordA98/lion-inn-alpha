@@ -52,9 +52,9 @@
     }
 }
 
-// When Hamburger is clicked
+// When HAMBURGER is clicked
 // Using media query as hamburger only appears on devices with a smaller width than 992px
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     #navbarSupportedContent {
         background-color: #000;
         padding: 0;
@@ -74,7 +74,7 @@
     #navbarSupportedContent .collapse-white {
         background-color: #FFF;
 
-        a { 
+        a {
             color: $lion-purple !important;
         }
     }

@@ -27,67 +27,79 @@
         <!-- Home section / landing page -->
         <div class="home p-0 d-flex flex-column" style="color: #FFF;">
             <!-- Header - logo and nav -->
-            <nav id="navbar-main" class="header navbar navbar-expand-lg mb-5 pt-3 row fixed-top">
+            <nav id="navbar-main" class="header navbar navbar-expand-xl mb-5 pt-3 row fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand p-0 col-6 col-lg-1 offset-lg-2" href="#">
+                <a class="navbar-brand mr-0 p-0 pl-3 pl-xl-0 col-6 col-xl-1 offset-xl-2" href="#">
                     <img src="images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
                 </a>
                 <!-- Hamburger for smaller screens -->
-                <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars" style="font-size:40pt; color:#FFF;"></i>
-                </button>
+                <div class="hamburger-container col-6 text-right p-0 d-xl-none">
+                    <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" style="font-size:40pt; color:#FFF;"></i>
+                    </button>
+                </div>
 
-                <div class="collapse navbar-collapse col-lg-11 p-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-lg-3 row">
-                        <li class="nav-item mr-lg-5">
-                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#about-us">About Us</a>
+                <div class="collapse navbar-collapse col-xl-6 p-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav row justify-content-center">
+                        <li class="nav-item mr-xl-5 collapse-purple">
+                            <a class="nav-link disabled pl-5 pt-xl-2 pl-xl-2 d-flex flex-column" href="#about-us">
+                                <span class="my-auto">About Us</span>
+                            </a>
                         </li>
-                        <li class="nav-item mr-lg-5">
-                            <a class="nav-link enabled collapse-white pt-4 pt-lg-2 pl-5 pl-lg-2" href="#food">Food</a>
+                        <li class="nav-item mr-xl-5 collapse-white">
+                            <a class="nav-link enabled pl-5 pt-xl-2 pl-xl-2 d-flex flex-column" href="#food">
+                                <span class="my-auto">Food</span>
+                            </a>
                         </li>
-                        <li class="nav-item mr-lg-5">
-                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#accommodation">Accommodation</a>
+                        <li class="nav-item mr-xl-5 collapse-purple">
+                            <a class="nav-link disabled pl-5 pt-xl-2 pl-xl-2 d-flex flex-column" href="#accommodation">
+                                <span class="my-auto">Accommodation</span>
+                            </a>
                         </li>
-                        <li class="nav-item mr-lg-5">
-                            <a class="nav-link enabled collapse-white pt-4 pt-lg-2 pl-5 pl-lg-2" href="#events">Events</a>
+                        <li class="nav-item mr-xl-5 collapse-white">
+                            <a class="nav-link enabled pl-5 pt-xl-2 pl-xl-2 d-flex flex-column" href="#events">
+                                <span class="my-auto">Events</span>
+                            </a>
                         </li>
-                        <li class="nav-item mr-lg-5">
-                            <a class="nav-link disabled collapse-purple pt-4 pt-lg-2 pl-5 pl-lg-2" href="#gallery">Gallery</a>
+                        <li class="nav-item mr-xl-5 collapse-purple">
+                            <a class="nav-link disabled pl-5 pt-xl-2 pl-xl-2 d-flex flex-column" href="#gallery">
+                                <span class="my-auto">Gallery</span>
+                            </a>
                         </li>
-                        <li class="nav-item mr-lg-5">
-                            <a class="nav-link enabled collapse-hide" href="#footer">Contact Us</a>
+                        <li class="nav-item collapse-hide">
+                            <a class="nav-link enabled" href="#footer">Contact Us</a>
                         </li>
                         <!-- Footer just for mobile hamburger -->
                         <div class="footer mobile-footer py-2">
                             <div class="row contact text-center">
-                                <div class="col-4 order-lg-1 col-lg-1 offset-lg-2">
+                                <div class="col-4 order-xl-1 col-xl-1 offset-xl-2">
                                     <i class="fas fa-phone mt-2"></i>
                                     <p class="mb-0 mt-1">01600 860322</p>
                                 </div>
-                                <div class="col-4 order-lg-2 col-lg-1">
+                                <div class="col-4 order-xl-2 col-xl-1">
                                     <i class="fas fa-envelope mt-2"></i>
                                     <p class="mb-0 mt-1 text-truncate">debs@globalnet.com</p>
                                 </div>
-                                <div class="col-4 order-lg-3 col-lg-1">
+                                <div class="col-4 order-xl-3 col-xl-1">
                                     <i class="fas fa-map-marker-alt mt-2"></i>
                                     <p class="mb-0 mt-1">Get Directions</p>
                                 </div>
-                                <div class="col-12 order-first order-lg-4 col-lg-2 algerian">
+                                <div class="col-12 order-first order-xl-4 col-xl-2 algerian">
                                     <h3>THE LION INN</h3>
                                 </div>
-                                <div class="col-4 order-lg-5 col-lg-1">
+                                <div class="col-4 order-xl-5 col-xl-1">
                                     <a href="#">
                                         <i class="fab fa-google mt-2"></i>
                                     </a>
                                     <p class="mb-0 mt-1">Google</p>
                                 </div>
-                                <div class="col-4 order-lg-6 col-lg-1">
+                                <div class="col-4 order-xl-6 col-xl-1">
                                     <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g552009-d732964-Reviews-Lion_Inn-Monmouth_Monmouthshire_South_Wales_Wales.html">
                                         <i class="fab fa-tripadvisor mt-2"></i>
                                     </a>
                                     <p class="mb-0 mt-1">TripAdvisor</p>
                                 </div>
-                                <div class="col-4 order-lg-7 col-lg-1">
+                                <div class="col-4 order-xl-7 col-xl-1">
                                     <a href="https://www.facebook.com/TheLionInnTrellech/">
                                         <i class="fab fa-facebook mt-2"></i>
                                     </a>
