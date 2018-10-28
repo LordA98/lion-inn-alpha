@@ -34,7 +34,8 @@ nav .mobile-footer {
   color: #673ab7 !important; }
 
 .phone-no {
-  font-size: 19pt; }
+  font-size: 19pt;
+  border: 1pt solid #673ab7; }
 
 .btn-transparent {
   background: rgba(0, 0, 0, 0.3);

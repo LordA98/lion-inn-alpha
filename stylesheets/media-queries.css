@@ -15,21 +15,35 @@
  */
 @media (max-width: 576px) {
   .main-heading {
-    font-size: 15vw; }
-  .phone-no {
-    font-size: 6.5vw; } }
+    font-size: 15vw; } }
 
-@media (min-width: 576px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .phone-no {
-    font-size: 4vw; }
+    font-size: 2.2vw; }
   .buttons .btn-icon {
-    font-size: 3vw; } }
+    font-size: 2vw; } }
 
 @media (max-width: 1200px) {
+  .btn-phone, .btn-transparent {
+    height: 50px; }
   .btn-phone {
-    width: 100%; }
-  .btn-transparent {
-    width: 90%; } }
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  .btn-phone {
+    width: 80%; }
+  .phone-no {
+    font-size: 3vw; } }
+
+@media (max-width: 768px) {
+  .phone-no {
+    font-size: 3.3vw; } }
+
+@media (max-width: 576px) {
+  .btn-phone {
+    width: 90%; }
+  .phone-no {
+    font-size: 5.8vw; } }
 
 @media (max-width: 1199px) {
   #navbarSupportedContent {

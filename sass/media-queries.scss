@@ -22,33 +22,49 @@
 /*
  * HOME Section
  */
-// Scaling for HOME titles and button text / icons
+// Scaling for HOME titles
 @media (max-width: 576px) {
     .main-heading {
         font-size: 15vw;
     }
-
-    .phone-no {
-        font-size: 6.5vw;
-    }
 }
-@media (min-width: 576px) and (max-width: 1200px) {
-    .phone-no {
-        font-size: 4vw;
-    }
 
+// Scaling for buttons and icons
+@media (min-width: 768px) and (max-width: 1200px) {
+    .phone-no {
+        font-size: 2.2vw;
+    }
     .buttons .btn-icon {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
-// When screen width gets below 1200px
-// Change size of buttons in HOME section
 @media (max-width: 1200px) {
+    .btn-phone, .btn-transparent {
+        height: 50px;
+    }
     .btn-phone {
         width: 100%;
     }
-    .btn-transparent {
+}
+@media (max-width: 992px) {
+    .btn-phone {
+        width: 80%;
+    }
+    .phone-no {
+        font-size: 3vw;
+    }
+}
+@media (max-width: 768px) {
+    .phone-no {
+        font-size: 3.3vw;
+    }
+}
+@media (max-width: 576px) {
+    .btn-phone {
         width: 90%;
+    }
+    .phone-no {
+        font-size: 5.8vw;
     }
 }
 
