@@ -25,11 +25,11 @@
 
     <div class="container">
         <!-- Home section / landing page -->
-        <div class="home p-0 d-flex flex-column" style="color: #FFF;">
+        <div id="home" class="home p-0 d-flex flex-column" style="color: #FFF;">
             <!-- Header - logo and nav -->
             <nav id="navbar-main" class="header navbar navbar-expand-xl mb-5 pt-3 row fixed-top">
                 <!-- Logo -->
-                <a class="navbar-brand mr-0 p-0 pl-3 pl-xl-0 col-6 col-xl-1 offset-xl-2" href="#">
+                <a class="navbar-brand mr-0 p-0 pl-3 pl-xl-0 col-6 col-xl-1 offset-xl-2" href="#home">
                     <img src="images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
                 </a>
                 <!-- Hamburger for smaller screens -->
@@ -643,7 +643,9 @@
                     </div>
                     <div class="col-4 order-lg-3 col-lg-1">
                         <i class="fas fa-map-marker-alt mt-2"></i>
-                        <p class="mb-0 mt-1">Get Directions</p>
+                        <a href="https://maps.google.com/?q=51.7460885,-2.7240651&t=m" target="_blank">
+                            <p class="mb-0 mt-1">Get Directions</p>
+                        </a>
                     </div>
                     <div class="col-12 order-first order-lg-4 col-lg-2 algerian d-flex flex-column">
                         <h3 class="my-auto">THE LION INN</h3>
