@@ -122,6 +122,10 @@
   width: 10%;
 }
 
+.food .book-table h4 {
+  font-size: 1.2vw;
+}
+
 .food .book-table .reservation {
   color: #000;
 }
@@ -207,11 +211,11 @@ body {
 }
 
 .section-heading {
-  font-size: 6vmax;
+  font-size: 6vw;
 }
 
 .minor-heading {
-  font-size: 4vmax;
+  font-size: 4vw;
 }
 
 p {
@@ -284,6 +288,16 @@ nav .mobile-footer {
   font-size: 30pt;
 }
 @media (max-width:576px) {
+  .section-heading {
+    font-size: 15vw;
+  }
+
+  .minor-heading {
+    font-size: 9vw;
+  }
+}
+
+@media (max-width:576px) {
   .main-heading {
     font-size: 15vw;
   }
@@ -320,21 +334,34 @@ nav .mobile-footer {
     height: 100vh;
   }
 
-  #navbarSupportedContent li a {
-    color: #000;
+  #navbarSupportedContent li {
     height: 11vh;
+  }
+
+  #navbarSupportedContent li a {
     font-size: 5vw;
+    height: 100%;
     text-transform: none;
   }
 
+  #navbarSupportedContent a:hover {
+    background-color: inherit;
+  }
+
   #navbarSupportedContent .collapse-white {
-    color: #673ab7!important;
     background-color: #fff;
   }
 
+  #navbarSupportedContent .collapse-white a {
+    color: #673ab7!important;
+  }
+
   #navbarSupportedContent .collapse-purple {
-    color: #fff;
     background-color: #673ab7;
+  }
+
+  #navbarSupportedContent .collapse-purple a {
+    color: #fff;
   }
 
   #navbarSupportedContent .collapse-hide {
@@ -358,6 +385,12 @@ nav .mobile-footer {
 
   #navbarSupportedContent .mobile-footer p {
     font-size: 2vw;
+  }
+}
+
+@media (max-width:576px) {
+  .food .book-table h4 {
+    font-size: 5vw;
   }
 }
 

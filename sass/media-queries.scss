@@ -5,6 +5,21 @@
 @import 'variables';
 
 /*
+ * GENERAL Section
+ */
+@media (max-width: 576px) {
+    .section-heading {
+        font-size: 15vw;
+    }
+    .minor-heading {
+        font-size: 9vw;
+    }
+}
+
+
+
+
+/*
  * HOME Section
  */
 // Scaling for HOME titles and button text / icons
@@ -45,19 +60,30 @@
         padding: 0;
         height: 100vh;
     }
+    #navbarSupportedContent li {
+        height: 11vh;
+    }
     #navbarSupportedContent li a {
-        color: #000;
-        height: 11vh; //75px;
-        font-size: 5vw; //16pt;
+        font-size: 5vw;
+        height: 100%;
         text-transform: none;
     }
+    #navbarSupportedContent a:hover {
+        background-color: inherit;
+    }
     #navbarSupportedContent .collapse-white {
-        color: $lion-purple !important;
         background-color: #FFF;
+
+        a { 
+            color: $lion-purple !important;
+        }
     }
     #navbarSupportedContent .collapse-purple {
-        color: #FFF;
         background-color: $lion-purple;
+
+        a {
+            color: #FFF;
+        }
     }
     #navbarSupportedContent .collapse-hide {
         visibility: hidden;
@@ -69,7 +95,7 @@
         background-color: #000;
 
         h3 {
-            font-size: 8vw;//25pt;
+            font-size: 8vw;
         }
 
         i {
@@ -84,8 +110,14 @@
 
 
 /*
- * FOOD Queries
+ * FOOD Section
  */
+// Heading scaling
+@media (max-width: 576px) {
+    .food .book-table h4 {
+        font-size: 5vw;
+    }
+}
 // Hide menu image when screen gets to mobile size
 @media (max-width: 992px) {
     .food .menu .right {
@@ -226,7 +258,7 @@
         font-size: 2.5vw !important;
     }
     .menu-items p.price { // dish price
-        font-size: 3.2vw !important; 
+        font-size: 3.2vw !important;
     }
 }
 
