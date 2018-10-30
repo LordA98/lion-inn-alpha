@@ -2,7 +2,7 @@ Fonts being used:
 
 Montserrant
 Great Vibes
-Algerian Regular
+Algeria
 
 PLUGINS:
 - All-in-One WP Migration - security and backups

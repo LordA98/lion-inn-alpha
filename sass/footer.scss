@@ -18,6 +18,9 @@
 .footer .contact p {
     font-size: 7pt;
 }
+.footer .contact p.overflow {
+    overflow: visible;
+}
 .footer .contact .nav-tabs {
     border: 0;
 }

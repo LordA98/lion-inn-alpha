@@ -173,9 +173,11 @@
 /*
  * FOOTER Section
  */
-@media (min-width: 992px) and (max-width: 1221px) {
-  .footer .contact h3 {
-    font-size: 2.1vw; } }
+@media (min-width: 992px) and (max-width: 1310px) {
+  .footer .contact p.overflow {
+    word-wrap: break-word; }
+  .footer .contact h2 {
+    font-size: 2.3vw; } }
 
 /*
  * MENU Section

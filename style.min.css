@@ -93,8 +93,15 @@
   font-family: 'Great Vibes',cursive;
 }
 
-.algerian {
-  font-family: 'Algerian Regular',sans-serif;
+.algeria {
+  font-family: Algeria,sans-serif;
+}
+
+@font-face {
+  font-family: Algeria;
+  src: url("fonts/algeria/ALGERIA.eot?") format("eot"),url("fonts/algeria/ALGERIA.woff") format("woff"),url("fonts/algeria/ALGERIA.ttf") format("truetype"),url("fonts/algeria/ALGERIA.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
 }
 .food {
   color: #000;
@@ -165,6 +172,10 @@
   font-size: 7pt;
 }
 
+.footer .contact p.overflow {
+  overflow: visible;
+}
+
 .footer .contact .nav-tabs {
   border: 0;
 }
@@ -203,7 +214,7 @@ body {
 }
 
 .main-heading {
-  font-size: 12vmin;
+  font-size: 13vmin;
 }
 
 .to {
@@ -524,9 +535,13 @@ nav .mobile-footer {
   }
 }
 
-@media (min-width:992px) and (max-width:1221px) {
-  .footer .contact h3 {
-    font-size: 2.1vw;
+@media (min-width:992px) and (max-width:1310px) {
+  .footer .contact p.overflow {
+    word-wrap: break-word;
+  }
+
+  .footer .contact h2 {
+    font-size: 2.3vw;
   }
 }
 

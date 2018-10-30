@@ -240,10 +240,14 @@
 /*
  * FOOTER Section
  */
-// Scale THE LION INN title properly between below widths (to prevent it breaking to a newline)
-@media (min-width: 992px) and (max-width: 1221px) {
-    .footer .contact h3 {
-        font-size: 2.1vw;
+@media (min-width: 992px) and (max-width: 1310px) {
+    // Break certain text to a newline
+    .footer .contact p.overflow {
+        word-wrap: break-word;
+    }
+    // Scale THE LION INN title properly between below widths (to prevent it breaking to a newline)
+    .footer .contact h2 {
+        font-size: 2.3vw;
     }
 }
 
