@@ -20,12 +20,27 @@
 /*
  * HOME Section
  */
-// Scaling for HOME titles
+// Add 'fixed' to home background image on laptop & desktop
+// As 'fixed' causes issues on smaller devices - makes bg image too blurry and zoomed
+@media (min-width: 1200px) {
+    .home-bg-image {
+        background-attachment: fixed;
+    }
+}
+
+// Scaling for HOME titles on mobile devices
 @media (max-width: 576px) {
     .main-heading {
         font-size: 15vw;
     }
 }
+// Scaling for TO title on portable devices
+@media (max-width: 1200px) {
+    .to {
+        font-size: 2vw;
+    }
+}
+
 
 // Scaling for buttons and icons
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -277,6 +292,12 @@
     }
     .menu-items p.price { // dish price
         font-size: 3.2vw !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .menu-items p.price { // dish price on bigger devices
+        font-size: 1vw !important;
     }
 }
 

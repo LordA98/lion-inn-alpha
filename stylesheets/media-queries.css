@@ -13,9 +13,17 @@
 /*
  * HOME Section
  */
+@media (min-width: 1200px) {
+  .home-bg-image {
+    background-attachment: fixed; } }
+
 @media (max-width: 576px) {
   .main-heading {
     font-size: 15vw; } }
+
+@media (max-width: 1200px) {
+  .to {
+    font-size: 2vw; } }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .phone-no {
@@ -195,6 +203,10 @@
     font-size: 2.5vw !important; }
   .menu-items p.price {
     font-size: 3.2vw !important; } }
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .menu-items p.price {
+    font-size: 1vw !important; } }
 
 /*
  * Creating 5 equal width columns for the menu navigation

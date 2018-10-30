@@ -248,8 +248,8 @@ p {
 }
 
 .home-bg-image {
-  background: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.2))),url("images/home-bg.png") no-repeat center center fixed;
-  background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("images/home-bg.png") no-repeat center center fixed;
+  background: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.2))),url("images/home-bg.png") no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("images/home-bg.png") no-repeat center center;
   background-size: cover;
   -o-background-size: cover;
   position: absolute;
@@ -309,9 +309,21 @@ nav .mobile-footer {
   }
 }
 
+@media (min-width:1200px) {
+  .home-bg-image {
+    background-attachment: fixed;
+  }
+}
+
 @media (max-width:576px) {
   .main-heading {
     font-size: 15vw;
+  }
+}
+
+@media (max-width:1200px) {
+  .to {
+    font-size: 2vw;
   }
 }
 
@@ -566,6 +578,12 @@ nav .mobile-footer {
 
   .menu-items p.price {
     font-size: 3.2vw!important;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1600px) {
+  .menu-items p.price {
+    font-size: 1vw!important;
   }
 }
 
