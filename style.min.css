@@ -213,14 +213,6 @@ body {
   color: #fff;
 }
 
-.main-heading {
-  font-size: 13vmin;
-}
-
-.to {
-  font-size: 1.5vmax;
-}
-
 .section-heading {
   font-size: 6vw;
 }
@@ -279,6 +271,37 @@ nav .mobile-footer {
 
 .purple-hamburger {
   color: #673ab7!important;
+}
+
+.main-heading {
+  font-size: 13vmin;
+}
+
+.to {
+  font-size: 1.5vmax;
+  overflow: hidden;
+  text-align: center;
+}
+
+.to:after,
+.to:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+
+.to:before {
+  right: .5em;
+  margin-left: -50%;
+}
+
+.to:after {
+  left: .5em;
+  margin-right: -50%;
 }
 
 .phone-no {

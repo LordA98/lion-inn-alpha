@@ -42,6 +42,35 @@ nav .mobile-footer {
     color: $lion-purple !important;
 }
 
+// Headings
+.main-heading {
+    font-size: 13vmin;
+}
+.to {
+    font-size: 1.5vmax;
+    overflow: hidden;
+    text-align: center;
+}
+// Lines on either side of to
+.to:before,
+.to:after {
+  background-color: #FFF;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+.to:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.to:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
 
 // Home page buttons
 .phone-no {
