@@ -192,6 +192,10 @@
 .footer .copyright p {
   font-size: 6pt;
 }
+
+.footer .btn-feedback {
+  font-size: 8pt;
+}
 .container {
   max-width: 1440px;
 }

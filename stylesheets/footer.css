@@ -34,3 +34,9 @@
  */
 .footer .copyright p {
   font-size: 6pt; }
+
+/*
+ * Developer Feedback
+ */
+.footer .btn-feedback {
+  font-size: 8pt; }
