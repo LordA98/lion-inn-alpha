@@ -1,3 +1,8 @@
+TODO:
+- If www.domain CNAME lioninn.co.uk doesn't work on DNS & Transfer Options
+- Try changing it to lioninn.co.uk/index.html
+- or try setting up redirects
+
 Fonts being used:
 
 Montserrant
