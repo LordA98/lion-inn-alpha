@@ -47,10 +47,23 @@ __HTML__ - Markup language used for theme (obviously).
 
 __CSS__ - Used to style theme (on top of Bootstrap styles).
 
-__Bootstrap__ - 
+__Bootstrap__ - Front-End Framework used to style themes.  Primary use is for scalability and structure.
+
+__JavaScript__ & __JQuery__ - Used for theme functionality (on top of Bootstrap).
+
+__PHP__ - Scripting inside of WordPress.
+
+__Taiga__ - Agile / Kanban board to track things to-do and passively document previous bugs and features.
+
+__Git__ & __GitHub__ - Source control (obviously - you're here).
+
+__Gulp__ - Task Runner - automatically compile Sass, concatenate CSS & JS files, create folder for production / test release.
+
+__NodeJS__ & __NPM__ - Used purely to install and manage any packages needed for Gulp tasks.
 
 ## Prerequisites
 
+- NodeJS Installed
 
 ## Download & Setup
 
