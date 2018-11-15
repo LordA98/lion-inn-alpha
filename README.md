@@ -19,23 +19,23 @@ The 'alpha' was released with an acceptably functioning website including the re
 
 No WordPress functionality was included in this release.  However, this design will be used as the first versoin of the theme used for WordPress - lioninn-alpha. 
 
-### Phase 2 - WordPress Integration of Alpha Theme (Current)
+#### Phase 2 - WordPress Integration of Alpha Theme (Current)
 
 Following on from phase 1, the next phase is to create a WordPress version of the alpha site.  The main goal of this phase is for the menu and (potentially) the events sections to be editable (add, edit, delete menu items & event items).
 
-### Phase 3 - Beta
+#### Phase 3 - Beta
 
 Back to theme development, as opposed to WordPress development.  Phase 3 will focus on adding the remaining sections (about us, gallery, and accommodation).  
 
 The goal being the release of the lioninn-beta theme.
 
-### Phase 4 - WordPress Integration of Beta Theme
+#### Phase 4 - WordPress Integration of Beta Theme
 
 Once the lioninn-beta theme is finished, I will integrate the new beta theme into WordPress. 
 
 When this site is released, we will begin to move out of the beta stage and into a finalised product.  As bugs and improvements get resolved following the beta release, the site will form into a fully functioning and (hopefully) lasting product.  
 
-### Phase 5 - Maintenance
+#### Phase 5 - Maintenance
 
 The final phase - maintenance - will essentially be a constant on-going phase.  I expect the busiest part of this phase to be in the months following the final big release.  It will slowly get quieter and quieter over time.
 
@@ -79,9 +79,49 @@ italic - "assumed Windows 10 but will probably also work with Windows 7"
 
 ## Development
 
+### Theme Development
 
-### Process
+I've been using Gulp to automate Sass compilation and concatenate all CSS files into style.css and all JS files into script.js.
 
+Open a cmd prompt or Git Bash and navigate to the repository.
+
+Run ```gulp watch```.
+
+There might be a delay before it starts, but it should say this:
+
+```
+$ gulp watch
+[19:05:57] Using gulpfile C:\projects\Websites\lion-inn\gulpfile.js
+[19:05:57] Starting 'watch'...
+```
+
+Whenever you make a change (and save) to a CSS or JS file, it will automatically compile / concatenate as needed.  The output should be:
+
+For CSS:
+
+```
+[19:09:16] Starting 'sass'...
+[19:09:17] Finished 'sass' after 535 ms
+[19:09:17] Starting 'css'...
+[19:09:18] Finished 'css' after 436 ms
+```
+
+For JS:
+
+```
+[19:10:07] Starting 'js'...
+[19:10:07] Finished 'js' after 113 ms
+```
+
+__Creating New Files__
+
+If you need to create a new stylesheet - create a new .scss file and put into the 'sass' folder.  No references need to be added anyway as this will compile into the style.css file.
+
+If you need to create a new script file - create a new .js file and put into the 'scripts' folder.  Again, no new references need to be added.
+
+__Conclusion__
+
+In essence, all you need to do is run ```gulp watch```.   You can then develop as needed and refresh the browser and the changes will show.  If changes do not show; either you refreshed too quickly, and the gulp task didn't finish yet, or there was an error in the code (check the gulp watch feed in the cmd prompt or Git Bash).
 
 ## Testing
 
