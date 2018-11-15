@@ -125,6 +125,33 @@ In essence, all you need to do is run ```gulp watch```.   You can then develop a
 
 ## Testing
 
+There are no tests of any sort (_yet_).  The only form of testing at the moment is locally and on two test sites.
+
+I have setup two 'test environments' for the site.  These are just freely hosted sites (hence the advertisement in the domain name).  These allow me to get feedback from others as they can navigate to these two websites like any normal site.
+
+Before uploading to either of these sites, we must first create the 'prod package' (this technically isn't necessary, but it makes it easier to ensure that everything needed is included.
+
+Stop the ```gulp watch``` task using ```Ctrl + C```.  Then run ```gulp prod```.  This will combine all of the files and folders needed into one folder called 'prod'.  Everything in this folder needs to be uploaded for the site to run properly.
+
+__1. http://test-lion.orgfree.com/__
+
+Uploading to this test site:
+
+Uploading to this site uses FTP.  _Uploading to the second test site is easier, but has a lot of issues signing into the file manager for the site.  This is due to faults on the hosting companies side._
+
+_Add FTP process / info / software in here_
+
+__2. https://test-lion.000webhostapp.com/__
+
+Uploading to this test site:
+
+Navigate to https://files.000webhost.com/.
+
+Site Name: test-lion
+
+Password: _ask for it_
+
+_Update this when the site actually starts working again_
 
 ## Design
 
