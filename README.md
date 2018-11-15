@@ -155,4 +155,16 @@ _Update this when the site actually starts working again_
 
 ## Design
 
+Design documentation can be found in [docs/designs](https://github.com/LordA98/lion-inn/tree/master/docs/designs).
 
+This directory contains two sub-directories:
+
+1. ```pngs``` - PNG versions of website design.
+
+2. ```psds``` - The original Photoshop versions of the website design.
+
+Use the PNG files as a reference for development.
+
+Minor changes to the design are not replicated in the designs as the trade off of effort to value isn't worth it.
+
+Any major changes will require the designs to be updated in Photoshop and for new PNG files to be created.
