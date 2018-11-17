@@ -90,11 +90,7 @@ Install Node:
 
 Check install with ```node -v``` and ```npm -v```.
 
-Install Gulp globablly:
-
-```sudo npm install gulp-cli -g```
-
-If prompted, run ```npm install gulp``` to install Gulp locally in the repo directory.
+Run ```npm i```.
 
 Try running ```gulp watch``` to check that it works.
 
