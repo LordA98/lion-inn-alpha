@@ -7,6 +7,8 @@ let cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var print = require('gulp-print').default;
+var dateTime = require('get-date');
+var del = require('del');
 
 // Sass Task
 // Compile Sass files into CSS
@@ -48,10 +50,43 @@ gulp.task('watch', function() {
 });
 
 
+// 'gulp test'
+// Adds all files needed for deployment into the prod folder
+// Has to be called manually - not included in 'watch'
+gulp.task('test', function() {
+    gulp.src(['./index.html', './style.min.css', './script.js', './favicon.ico'])
+        .pipe(gulp.dest('./test/'));
+    gulp.src('./html/**/*')
+        .pipe(gulp.dest('./test/html/'));
+    gulp.src('./images/**/*')
+        .pipe(gulp.dest('./test/images/'));
+    gulp.src('./fonts/**/*')
+        .pipe(gulp.dest('./test/fonts/'));
+    return gulp.src('package.json')
+        .pipe(print(function() {return "Task Complete.  Files added to 'test' directory."}));
+});
+
+// Dependency for gulp prod
+// Backs-up files currently in prod folder
+gulp.task('backup', function() {
+    return gulp.src('./prod/**/*')
+        .pipe(gulp.dest('./backups/' + dateTime().split('/').join('') + '/'));
+});
+
+// Dependency for gulp prod
+// Deletes all current files in prod
+gulp.task('del-old', function() {
+    return del([
+        './prod/**/*'
+    ]);
+});
+
 // 'gulp prod'
 // Adds all files needed for deployment into the prod folder
 // Has to be called manually - not included in 'watch'
-gulp.task('prod', function() {
+gulp.task('prod', gulp.series('backup', 'del-old', function() {
+
+    // Create new 'prod' folder
     gulp.src(['./index.html', './style.min.css', './script.js', './favicon.ico'])
         .pipe(gulp.dest('./prod/'));
     gulp.src('./html/**/*')
@@ -60,6 +95,8 @@ gulp.task('prod', function() {
         .pipe(gulp.dest('./prod/images/'));
     gulp.src('./fonts/**/*')
         .pipe(gulp.dest('./prod/fonts/'));
+
+    // Return
     return gulp.src('package.json')
         .pipe(print(function() {return "Task Complete.  Files added to 'prod' directory."}));
-});
+}));
