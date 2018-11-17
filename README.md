@@ -167,7 +167,7 @@ I have setup two 'test environments' for the site.  These are just freely hosted
 
 Before uploading to either of these sites, we must first create the 'prod package' (this technically isn't necessary, but it makes it easier to ensure that everything needed is included.
 
-Stop the ```gulp watch``` task using ```Ctrl + C```.  Then run ```gulp prod```.  This will combine all of the files and folders needed into one folder called 'prod'.  Everything in this folder needs to be uploaded for the site to run properly.
+Stop the ```gulp watch``` task using ```Ctrl + C```.  Then run ```gulp test```.  This will combine all of the files and folders needed into one folder called 'test'.  Everything in this folder needs to be uploaded for the site to run properly.
 
 __1. http://test-lion.orgfree.com/__
 
@@ -200,6 +200,18 @@ Alternatively, also use FTP:
 Host: files.000webhost.com
 Username: test-lion
 Password: _ask for it_
+
+## Deployment
+
+Stop running any Gulp tasks currently running (probably 'gulp watch').
+
+Run ```gulp prod```.  
+
+This will move the files currently in 'prod' to a backup folder - backups/DDMMYYYY.  It then deletes everything from the 'prod' folder.  Then adds all needed files into the 'prod' folder.  
+
+The 'prod' folder and 'backups' folders should hardly change and not be touched.  The idea of the 'prod' folder is to keep track of what is currently live, and to ensure we deploy all needed files.
+
+All the files and folders that are needed are listed in the 'prod' task in the gulpfile.js file. 
 
 ## Documentation
 
