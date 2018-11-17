@@ -74,7 +74,7 @@ italic - "assumed Windows 10 but will probably also work with Windows 7"
 
 We need NodeJS installed in order to use NPM to install Gulp.  I have used Homebrew to install Node, but as long as it's installed, it doesn't matter.
 
-To check if Node is installed - ```node -v``` or ```npm -v```.
+To check if Node is installed, run ```node -v``` or ```npm -v```.
 
 Retrieve the latest version of Node:
 
@@ -96,7 +96,7 @@ Install Gulp globablly:
 
 If prompted, run ```npm install gulp``` to install Gulp locally in the repo directory.
 
-Try running ```gulp watch```.
+Try running ```gulp watch``` to check that it works.
 
 __Trouble Shooting__
 
@@ -141,15 +141,23 @@ For JS:
 [19:10:07] Finished 'js' after 113 ms
 ```
 
-__Creating New Files__
+__Project Structure__
 
-If you need to create a new stylesheet - create a new .scss file and put into the 'sass' folder.  No references need to be added anyway as this will compile into the style.css file.
+_HTML_
 
-If you need to create a new script file - create a new .js file and put into the 'scripts' folder.  Again, no new references need to be added.
+Other than the index.html file, all other HTML files should be placed into the 'html' directory.
+
+_Sass & CSS_
+
+Other than the style.min.css file, any new stylesheets should be created in the 'sass' directory with a .scss extension.  The 'gulp watch' task explained above with compile the Sass into CSS (in the 'stylesheets' directory) and then concatenate the CSS files into style.min.css.
+
+_JavaScript_
+
+Other than the script.js and gulpfile.js files, any other JavaScript files should be placed into 'scripts' directory.  The 'gulp watch' task will concatenate this into script.js.
 
 __Conclusion__
 
-In essence, all you need to do is run ```gulp watch```.   You can then develop as needed and refresh the browser and the changes will show.  If changes do not show; either you refreshed too quickly, and the gulp task didn't finish yet, or there was an error in the code (check the gulp watch feed in the cmd prompt or Git Bash).
+In essence, all you need to do is run ```gulp watch```.   You can then develop as needed and refresh the browser and the changes will show.  If changes do not show; either you refreshed too quickly, and the gulp task didn't finish yet, or there was an error in the code (check the gulp watch feed in the cmd prompt, Git Bash or Terminal).
 
 ### WordPress Development
 
@@ -171,7 +179,12 @@ Uploading to this test site:
 
 Uploading to this site uses FTP.  _Uploading to the second test site is easier, but has a lot of issues signing into the file manager for the site.  This is due to faults on the hosting companies side._
 
-_Add FTP process / info / software in here_
+FTP Details:
+
+Host: doms.freewha.com
+Username: test-lion.orgfree.com
+Password: _ask for it_
+
 
 __2. https://test-lion.000webhostapp.com/__
 
@@ -180,12 +193,21 @@ Uploading to this test site:
 Navigate to https://files.000webhost.com/.
 
 Site Name: test-lion
-
 Password: _ask for it_
 
-_Update this when the site actually starts working again_
+Delete files in 'public_html' directory.  
 
-## Design
+Drag and drop files from 'prod' folder into 'public_html' folder on website.
+
+Alternatively, also use FTP:
+
+Host: files.000webhost.com
+Username: test-lion
+Password: _ask for it_
+
+## Documentation
+
+### Design
 
 Design documentation can be found in [docs/designs](https://github.com/LordA98/lion-inn/tree/master/docs/designs).
 
