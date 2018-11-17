@@ -61,13 +61,9 @@ __Gulp__ - Task Runner - automatically compile Sass, concatenate CSS & JS files,
 
 __NodeJS__ & __NPM__ - Used purely to install and manage any packages needed for Gulp tasks.
 
-## Prerequisites
-
-- NodeJS Installed
-
 ## Download & Setup
 
-Git clone etc
+```git clone https://github.com/LordA98/lion-inn.git```
 
 ### Windows
 
@@ -75,6 +71,38 @@ italic - "assumed Windows 10 but will probably also work with Windows 7"
 
 
 ### Mac OSX
+
+We need NodeJS installed in order to use NPM to install Gulp.  I have used Homebrew to install Node, but as long as it's installed, it doesn't matter.
+
+To check if Node is installed - ```node -v``` or ```npm -v```.
+
+Retrieve the latest version of Node:
+
+```brew update```
+
+If it recommends to do so, run: 
+
+```brew upgrade```
+
+Install Node:
+
+```brew install node```
+
+Check install with ```node -v``` and ```npm -v```.
+
+Install Gulp globablly:
+
+```sudo npm install gulp-cli -g```
+
+If prompted, run ```npm install gulp``` to install Gulp locally in the repo directory.
+
+Try running ```gulp watch```.
+
+__Trouble Shooting__
+
+"_Error: Node Sass does not yet support your current environment..._": 
+
+Run ```npm rebuild node-sass```.  Or if your error isn't Node Sass related, replace 'node-sass' with the relevant module name.
 
 
 ## Development
@@ -122,6 +150,10 @@ If you need to create a new script file - create a new .js file and put into the
 __Conclusion__
 
 In essence, all you need to do is run ```gulp watch```.   You can then develop as needed and refresh the browser and the changes will show.  If changes do not show; either you refreshed too quickly, and the gulp task didn't finish yet, or there was an error in the code (check the gulp watch feed in the cmd prompt or Git Bash).
+
+### WordPress Development
+
+_TODO_
 
 ## Testing
 
