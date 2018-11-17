@@ -67,8 +67,15 @@ __NodeJS__ & __NPM__ - Used purely to install and manage any packages needed for
 
 ### Windows
 
-italic - "assumed Windows 10 but will probably also work with Windows 7"
+_Assumed Windows 10 but will probably also work with Windows 7_
 
+Download & Install NodeJS from here - [NodeJS](https://nodejs.org/en/download/).
+
+To check if Node is installed, run ```node -v``` or ```npm -v```.
+
+Run ```npm i```.
+
+Run ```gulp watch``` to check that Gulp is working.
 
 ### Mac OSX
 
