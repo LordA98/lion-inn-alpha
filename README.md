@@ -3,7 +3,9 @@
 
 ## Overview
 
-This repository contains all the files used for developing the WordPress theme for The Lion Inn website.
+This repository contains all the files used for developing the alpha version for The Lion Inn website.  This version was also used as the starting blocks for the WordPress theme.
+
+I created this 'alpha' bare bones version of the site as we wanted to get something live as soon as possible.
 
 The Lion Inn is a pub in Trellech, Monmoutshire, Wales.
 
