@@ -43,8 +43,6 @@ The final phase - maintenance - will essentially be a constant on-going phase.  
 
 ## Technologies & Tools
 
-__WordPress__ - Content Management System (CMS) used so that client can edit and update site when needed (within reason).
-
 __HTML__ - Markup language used for theme (obviously).
 
 __CSS__ - Used to style theme (on top of Bootstrap styles).
@@ -52,8 +50,6 @@ __CSS__ - Used to style theme (on top of Bootstrap styles).
 __Bootstrap__ - Front-End Framework used to style themes.  Primary use is for scalability and structure.
 
 __JavaScript__ & __JQuery__ - Used for theme functionality (on top of Bootstrap).
-
-__PHP__ - Scripting inside of WordPress.
 
 __Taiga__ - Agile / Kanban board to track things to-do and passively document previous bugs and features.
 
@@ -65,7 +61,7 @@ __NodeJS__ & __NPM__ - Used purely to install and manage any packages needed for
 
 ## Download & Setup
 
-```git clone https://github.com/LordA98/lion-inn.git```
+```git clone https://github.com/LordA98/lion-inn-alpha.git```
 
 ### Windows
 
@@ -163,10 +159,6 @@ Other than the script.js and gulpfile.js files, any other JavaScript files shoul
 __Conclusion__
 
 In essence, all you need to do is run ```gulp watch```.   You can then develop as needed and refresh the browser and the changes will show.  If changes do not show; either you refreshed too quickly, and the gulp task didn't finish yet, or there was an error in the code (check the gulp watch feed in the cmd prompt, Git Bash or Terminal).
-
-### WordPress Development
-
-_TODO_
 
 ## Testing
 
