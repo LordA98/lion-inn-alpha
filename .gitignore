@@ -11,3 +11,6 @@ node_modules
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Shortcut to WordPress version #
+wordpress-version.lnk
