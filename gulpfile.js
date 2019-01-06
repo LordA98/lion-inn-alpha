@@ -88,11 +88,8 @@ gulp.task('prod', gulp.series('backup', 'del-old', function() {
 
     // Create new 'prod' folder
     // from root
-    gulp.src(['./index.html', './style.min.css', './script.js', './favicon.ico'])
+    gulp.src(['./index.html', './menu.html', './style.min.css', './script.js', './favicon.ico'])
         .pipe(gulp.dest('./prod/'));
-    // from html folder
-    gulp.src('./html/**/*')
-        .pipe(gulp.dest('./prod/html/'));
     // from images folder
     gulp.src('./images/**/*')
         .pipe(gulp.dest('./prod/images/'));

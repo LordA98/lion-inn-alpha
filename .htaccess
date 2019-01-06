@@ -1,0 +1,4 @@
+# Redirects
+
+# Redirect from Old Menu URL to New One
+Redirect 301 /html/menu.html http://www.lioninn.co.uk/menu.html
