@@ -54,14 +54,19 @@ gulp.task('watch', function() {
 // Adds all files needed for deployment into the test folder
 // Has to be called manually - not included in 'watch'
 gulp.task('test', function() {
-    gulp.src(['./index.html', './style.min.css', './script.js', './favicon.ico'])
-        .pipe(gulp.dest('./test/'));
-    gulp.src('./html/**/*')
-        .pipe(gulp.dest('./test/html/'));
+    // Create new 'test' folder
+    // from root
+    gulp.src(['./index.html', './menu.html', './style.min.css', './script.js', './favicon.ico'])
+    .pipe(gulp.dest('./test/'));
+
+    // from images folder
     gulp.src('./images/**/*')
         .pipe(gulp.dest('./test/images/'));
+    // from fonts folder
     gulp.src('./fonts/**/*')
         .pipe(gulp.dest('./test/fonts/'));
+
+    // Return success message
     return gulp.src('package.json')
         .pipe(print(function() {return "Task Complete.  Files added to 'test' directory."}));
 });
