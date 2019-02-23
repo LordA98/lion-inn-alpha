@@ -51,7 +51,7 @@ gulp.task('watch', function() {
 
 
 // 'gulp test'
-// Adds all files needed for deployment into the prod folder
+// Adds all files needed for deployment into the test folder
 // Has to be called manually - not included in 'watch'
 gulp.task('test', function() {
     gulp.src(['./index.html', './style.min.css', './script.js', './favicon.ico'])
