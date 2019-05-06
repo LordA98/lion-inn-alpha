@@ -1,0 +1,2850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+</head>
+<body class="montserrat">
+
+    <div class="container menu">
+
+        <div class="header row mt-2">
+            <div class="col-2 my-auto p-0">
+                <a class="btn btn-lg btn-back py-1 px-2" href="index.html">
+                    <i class="fas fa-angle-left"></i>
+                    Back
+                </a>
+            </div>
+            <a class="col-2 offset-7 offset-sm-8 text-right p-0" href="index.html">
+                <img src="images/logo.png" width="75px" height="75px" alt="The Lion Inn Logo">
+            </a>
+        </div>
+
+        <!-- Clickable Tabs -->
+        <ul class="nav nav-tabs row menu-options text-center mt-4" id="myTab" role="tablist">
+            <li class="nav-item col-1 p-0">
+                <a class="nav-link active p-0 d-flex flex-column" id="standard-tab" data-toggle="tab" href="#standard" role="tab" aria-controls="standard" aria-selected="true">
+                    <h4 class="m-0 my-auto">Standard</h4>
+                </a>
+            </li>
+            <li class="nav-item col-1 p-0">
+                <a class="nav-link p-0 d-flex flex-column" id="pizza-tab" data-toggle="tab" href="#pizza" role="tab" aria-controls="pizza" aria-selected="false">
+                    <h4 class="m-0 my-auto">Pizza</h4>
+                </a>
+            </li>
+            <li class="nav-item col-1 p-0">
+                <a class="nav-link p-0 d-flex flex-column" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">
+                    <h4 class="m-0 my-auto">Desserts</h4>
+                </a>
+            </li>
+            <li class="nav-item col-1 p-0">
+                <a class="nav-link p-0 d-flex flex-column" id="sunday-tab" data-toggle="tab" href="#sunday" role="tab" aria-controls="sunday" aria-selected="false">
+                    <h4 class="m-0 my-auto">Sunday</h4>
+                </a>
+            </li>
+            <li class="nav-item col-1 p-0">
+                <a class="nav-link p-0 d-flex flex-column" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">
+                    <h4 class="m-0 my-auto">Upcoming Events</h4>
+                </a>
+            </li>
+        </ul>
+
+        <div class="filters row py-2">
+            <div class="gluten offset-1">
+                <img class="mx-2" src="images/gluten-free.png" alt="Image of Gluten Free Icon" />
+                <p>Gluten Free</p>
+            </div>
+
+            <div class="vegetarian offset-1">
+                <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                <p>Vegetarian</p>
+            </div>
+        </div>
+
+
+        <!-- Menu information (based off of which nav-tab is selected) -->
+        <div class="menu-items tab-content mt-5 pl-0" id="myTabContent" style="background-color: #FFF;">
+            <!-- STANDARD MENU TAB -->
+            <div class="tab-pane fade show active" id="standard" role="tabpanel" aria-labelledby="standard-tab">
+                <div class="row">
+                    <div class="left col-lg-6">
+                        <div class="grazing">
+                            <!-- GRAZERS -->
+                            <h1 class="great-vibes m-0">Grazing</h1>
+                            <hr class="mt-2"/>
+
+                            <!-- Crackling -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Crispy Pork Crackling</h3>
+                                    <p>Crispy Pork Crackling served with warm apple sauce.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Mixed Olives -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Mixed Olives</h3>
+                                    <p>Bowl of mixed olives, sun blushed tomatoes & crusty bread.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+                        </div>
+
+                        <div class="starters mt-5">
+                            <!-- STARTERS -->
+                            <h1 class="great-vibes m-0">Starters</h1>
+                            <hr class="m-0"/>
+
+                            <!-- Soup -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Soup of the Day</h3>
+                                    <p>Homemade soup of the day served with hot crusty bread.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Pan Fried Prawns -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Pan Fried King Prawns</h3>
+                                    <p>Pan fried king prawns cooked in olive oil and crushed garlic served with rustic crusty bread and salad.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£7.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Pan Fried Pigeon -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Pan Fried Pigeon</h3>
+                                    <p>Pan fried pigeon breast cookked in a red onion, red wine and horseradish sauce served with crusty bread.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£7.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                        </div>
+
+                        <div class="sharers mt-5">
+                            <!-- SHARERS -->
+                            <h1 class="great-vibes m-0">Sharers</h1>
+                            <hr class="m-0"/>
+
+                            <!-- The Lion Platter -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">The Lion Platter</h3>
+                                    <p>Pan fried king prawns in olive oil & garlic, beer battered onion rings, potato wedges & dips, spicy chicken goujons with chill dip and chinese sticky barbeque baby pork ribs. Suitable for 2.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£16.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>We can also provide a vegetarian sharer on request.</i></p>
+                            </div>
+                        </div>
+
+                        <div class="mains mt-5">
+                            <!-- MAINS -->
+                            <h1 class="great-vibes m-0">Mains</h1>
+                            <!-- Just MAINS -->
+                            <hr class="mt-1" />
+                            <!-- HEC -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Ham, Egg and Chips</h3>
+                                    <p>Home cooked locally reared ham with two fried eggs and chips.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.20</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Pie of the Week -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Pie of the Week</h3>
+                                    <p>Served with fresh vegetables and Trellech tatties.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£12.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Lamb Shank -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Lamb Shank</h3>
+                                    <p>Slow cooked lamb shank served with a rich red wine, tomato and rosemary jus, sauteed potatoes and fresh vegetables.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£14.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chicken Curry -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Chicken Curry</h3>
+                                    <p>Homemade Chicken Curry - either mild Korma or hot Madrass served with rice and a popadom.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£11.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="pasta">
+                                <h2 class="main-sub-heading p-2">Pasta</h2>
+
+                                <!-- Carbonnara -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Tagliatelli Carbonnara</h3>
+                                        <p>Home made pasta carbonarra - Tagliatelli pasta served with a rich creamy ham, cheese and mushroom sauce.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Lasagne -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Lasagne</h3>
+                                        <p>Homemade lasagne toppped with a rich cheese sauce served with fresh vegetables and chips.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£10.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Veg Lasagne -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Vegetarian Lasagne</h3>
+                                        <p>Homemade vegetable lasagne toppped with a rich cheese sauce served with fresh vegetables and chips.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                        <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+                            </div>
+
+                            <div class="from-the-grill">
+                                <h2 class="main-sub-heading p-2">From the Grill</h2>
+
+                                <!-- Sirloin -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">8oz Sirloin Steak</h3>
+                                        <p>Locally reared 8oz Sirloin Steak.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£17.95</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Rib Eye -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">8oz Rib Eye Steak</h3>
+                                        <p>Locally reared 8oz Rib Eye Steak.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£19.95</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Gammon Steak -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Half Moon Gammon Steak</h3>
+                                        <p>Locally reared half moon Gammon Steak served with a fried egg, buttered peas and chips.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£13.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Duo of Game -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Duo of Game</h3>
+                                        <p>Medallions of Venison and Hare served with a rich red wine gravy.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£18.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Sauce -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Sauces</h3>
+                                        <p>Peppercorn, Blue Cheese or Creamy Mushroom-per Sauce.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <div class="note">
+                                    <p><i>All of our grills are served with sauteed mushrooms, pan friend tomato, beer battered onion rings and Trellech tatties or sweet potato chips.</i></p>
+                                </div>
+
+                            </div>
+
+                            <div class="hearty-classics">
+                                <h2 class="main-sub-heading p-2">Hearty Classics</h2>
+
+                                <!-- Trio of Sausages -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Trio of Sausages</h3>
+                                        <p>Trio of locally sauced butchers made sausages served with mustard mash, leeks and gravy.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£11.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Mushroom, Brie & Cranberry Wellington -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Mushroom, Brie & Cranberry Wellington</h3>
+                                        <p>Wild mushroom, brie and cranberry wellington served with boiled potatoes and fresh vegetables.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                        <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£10.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Beef Wellington -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Beef Wellington</h3>
+                                        <p>Beef Wellington made with fillet beef topped with chicken liver pate & bacon encased in a pastry served with tatties and fresh vegetables.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£13.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Faggots -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Faggots</h3>
+                                        <p>Locally sourced butcher made Faggots cooked in a rich onion gravy served with mashed potato and garden or mushy peas.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                            </div>
+
+                            <div class="hearty-classics">
+                                <h2 class="main-sub-heading p-2">From the Sea</h2>
+
+                                <!-- Poached Salmon Steak -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Poached Salmon Steak</h3>
+                                        <p>Poached salmon steak with a creamy dill sauce, new potatoes and fresh vegetables.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£10.95</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Scampi -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Scampi</h3>
+                                        <p>Breaded whole tail scampi served with chips and either garden or mushy peas.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.75</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Battered Cod -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Beer Battered Cod</h3>
+                                        <p>Homemade beer battered cod served with chips and a choice of garden peas or mushy peas.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                            </div>
+
+                            <div class="burgers">
+                                <h2 class="main-sub-heading p-2">Burgers</h2>
+
+                                <!-- Beef Burger -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Homemade Beef Burger</h3>
+                                        <p>Homemade Beef Burger served with bacon and a Caerphilly cheese with herb and garlic, and onion rings.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£11.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Dragon Chilli Burger -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Dragon Chilli Burger</h3>
+                                        <p>Homemade Chilli Beef Burger served with bacon, onion rings and mozzarella.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£12.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Forester Chicken Burger -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Forester Chicken Burger</h3>
+                                        <p>Locally reared chicken breast loaded with barbeque sauce, bacon and mozzarella.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£12.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <div class="note">
+                                    <p><i>All of our burgers are served in brioche buns with a crisp salad, homemade coleslaw and Trellech tatties or sweet potato chips.</i></p>
+                                </div>
+
+                            </div>
+
+                            <div class="smaller-appetite">
+                                <h2 class="main-sub-heading p-2">For the Smaller Appetite</h2>
+
+                                <!-- HEC -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Ham, Egg and Chips</h3>
+                                        <p>Home cooked locally reared ham with two fried eggs and chips.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.60</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Lasagne -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Lasagne</h3>
+                                        <p>Homemade lasagne topped with a rich cheese sauce served with fresh vegetables and chips.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Vegetable Lasagne -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Vegetable Lasagne</h3>
+                                        <p>Homemade vegetable lasagne topped with a rich cheese sauce served with fresh vegetables and chips.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Scampi -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Scampi</h3>
+                                        <p>Breaded whole tail scampi served with chips and either garden or mushy peas.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.90</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Cod -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Battered Cod</h3>
+                                        <p>Homemade beer battered cod served with chips and either garden or mushy peas.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.75</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Sausage -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Butcher's Sausages</h3>
+                                        <p>Trio of locally sauced butchers made sausages served with mustard mash, leeks and gravy.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.50</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- Faggots -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">Faggots</h3>
+                                        <p>Locally sourced butcher made Faggots cooked in a rich onion gravy served with mashed potato and garden or mushy peas.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+
+                                <!-- 4oz Sirloin -->
+                                <div class="item row mt-2">
+                                    <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                        <h3 class="item-title">4oz Sirloin Steak</h3>
+                                        <p>Small Sirloin Steak garnished with sauteed mushrooms, tomato, onion rings and chips.</p>
+                                    </div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                    <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                        <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.25</p>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-1" />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SIDES -->
+                    <div class="sides right col-lg-4 offset-lg-2">
+                        <h1 class="great-vibes">Sides</h1>
+                        <hr class="mt-1" />
+
+                        <!-- Trellech Tatties -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Trellech Tatties</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cajun Spice</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+30p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Sweet Potato Chips -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Sweet Potato Chips</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cajun Spice</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+30p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+
+                        <!-- Chips -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Chips</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cajun Spice</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+30p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Fresh Vegetables -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Fresh Vegetables</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Salad -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Salad</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Coleslaw -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Homemade Coleslaw</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Onion Rings -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Beer Battered Onion Rings</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- New Potatoes -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">New Potatoes</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Garlic Bread -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Garlic Bread</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Bacon</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Mushy Peas -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Mushy Peas</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Bread & Butter -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Bread & Butter</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade my-4" id="pizza" role="tabpanel" aria-labelledby="pizza-tab">
+                <div class="row">
+                    <div class="left col-lg-6">
+                        <div class="pizza">
+                            <!-- PIZZA -->
+                            <h1 class="great-vibes m-0">Pizza</h1>
+                            <hr class="m-0"/>
+
+                            <!-- Margherita -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Margherita</h3>
+                                    <p>Mozzarella, tomatoes and Italian herbs.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Full House -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Full House</h3>
+                                    <p>Mozzarella, pepperoni, mushrooms, onion, ground chilli beef, sliced peppers & oregano.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£10.75</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Spicy Meat Feast -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Spicy Meat Feast</h3>
+                                    <p>Mozzarella, Pepperoni, Pepperami, Ground Chilli Beef, Onions, Jalapeno Peppers and Sweet Peppers.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£11.25</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Hawaiian -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Hawaiian</h3>
+                                    <p>Mozzarella, Ham & Pineapple.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£10.40</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Texas style BBQ pizza -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Texas Style BBQ Pizza</h3>
+                                    <p>Mozzarella, Chicken, Bacon, Onions, Peppers, Smoky BBQ Sauce.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£11.25</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Vegetarian Full House -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Vegetarian Full House</h3>
+                                    <p>Mozzarella, Sun Dried Tomatoes, Wild Mushrooms, Olives, Mixed Italian Herbs, Pesto & Onion – For Vegans this pizza can be served without Mozzarella.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£10.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                        </div>
+
+                        <div class="build-your-own">
+                            <!-- PIZZA -->
+                            <h1 class="great-vibes mt-5">Build Your Own</h1>
+                            <hr class="m-0"/>
+
+                            <div class="note mt-2">
+                                <p>
+                                    <i>
+                                        For an additional £1.00 per item you can build your own pizza.  If there is something special you want, please ask.
+                                    </i>
+                                </p>
+                            </div>
+
+                            <h2 class="main-sub-heading p-2">Options</h2>
+
+                            <!-- Tuna -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Tuna</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chicken -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Chicken</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Bacon -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Bacon</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Peparami -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Peparami</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Pepperoni -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Pepperoni</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chilli Beef -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Chilli Beef</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Ham -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Ham</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Onions -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Onions</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Peppers -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Peppers</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Olives -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Olives</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Sun Dried Tomatoes -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Sun Dried Tomatoes</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Mushrooms -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Mushrooms</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- SIDES -->
+                    <div class="right col-lg-4 offset-lg-2">
+                        <div class="sides">
+                            <h1 class="great-vibes">Sides</h1>
+                            <hr class="mt-1" />
+
+                            <!-- Trellech Tatties -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Trellech Tatties</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Cheese</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+60p</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Cajun Spice</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+30p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Sweet Potato Chips -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Sweet Potato Chips</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Cheese</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+60p</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Cajun Spice</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+30p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+
+                            <!-- Chips -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Chips</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Cheese</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+60p</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Cajun Spice</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+30p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Fresh Vegetables -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Fresh Vegetables</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Salad -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Salad</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Coleslaw -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Homemade Coleslaw</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Onion Rings -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Beer Battered Onion Rings</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- New Potatoes -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">New Potatoes</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Garlic Bread -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Garlic Bread</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Cheese</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+60p</p>
+                                </div>
+                            </div>
+                            <div class="sub-item row">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <p>Bacon</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                    <p class="sub-price mr-3">+60p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Mushy Peas -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Mushy Peas</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Bread & Butter -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Bread & Butter</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade my-4" id="specials" role="tabpanel" aria-labelledby="specials-tab">
+                <h3>Specials</h3>
+            </div>
+            <div class="tab-pane fade my-4" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                <!-- DESSERTS -->
+                <div class="row">
+                    <div class="left col-lg-6">
+                        <div class="desserts">
+                            <h1 class="great-vibes m-0">Desserts</h1>
+                            <hr class="m-0"/>
+
+                            <!-- Cheese & Biscuits -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Mixed Cheese & Biscuits</h3>
+                                    <p>Mature cheddar, farmhouse brie & stilton served with a selection of biscuits.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£6.95</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Cheese & Port -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Cheese & Port for 2</h3>
+                                    <p>Mixed cheese & biscuits with port. Sharer for 2. A sampler of outstanding local cheese: Pearl Las, Pearl Wen, Caerphilly & Mature Cheddar served with caramelized onion chutney and a selection of cheese, biscuits and a decanter of Graham's Six Grapes Reserve Port.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£16.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>We also have a wide variety of desserts on the specials board within the pub.  These change a regular basis.</i></p>
+                            </div>
+
+                            <!-- ICE CREAM -->
+                            <h1 class="great-vibes mt-5">Ice Cream</h1>
+                            <hr class="mt-1" />
+
+                            <!-- Vanilla -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Lion Sundae</h3>
+                                    <p>All 3 flavours of ice cream served with cherries, chocolate sauce and whipped cream.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Vanilla -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Vanilla</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£1.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Strawberry -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Strawberry</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£1.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chocolate -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Chocolate</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£1.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- TOPPINGS -->
+                            <h2 class="main-sub-heading p-2">Toppings</h2>
+
+                            <!-- Popping Candy -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Popping Candy</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">50p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Honeycombe -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Honeycombe</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">50p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chocolate Sauce -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Chocolate Sauce</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">10p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Raspberry Sauce -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Raspberry Sauce</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">10p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Whipped Cream -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Whipped Cream</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">50p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Custard -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Custard</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">50p</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+                        </div>
+                    </div>
+
+                    <!-- Coffees -->
+                    <div class="right col-lg-4 offset-lg-2">
+                        <h1 class="great-vibes">Beverages</h1>
+                        <hr class="mt-1" />
+
+                        <!-- Filter Coffee -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Filter Coffee</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Tea -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Tea</h3>
+                                <p>English Breakfast, Earl Grey, Peppermint or Fruit</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Latte -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Latte</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Hot Chocolate -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Hot Chocolate</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <h1 class="great-vibes mt-5">Specialty Coffees</h1>
+                        <hr class="mt-1" />
+
+                        <!-- Floater -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Filter Coffee Plain Floater</h3>
+                                <p>Plain Peruvian Filter Coffee Floater</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Gaelic -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Gaelic Coffee</h3>
+                                <p>with Irish Malt Whiskey</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Highland -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Highland Coffee</h3>
+                                <p>with Scottish Malt Whiskey</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Napoleon -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Napoleon Coffee</h3>
+                                <p>with Brandy</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.80</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Calypso -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Calypso Coffee</h3>
+                                <p>with Tia Maria</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.60</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Jamaican -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Jamaican Coffee</h3>
+                                <p>with Dark Rum</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.80</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Italian -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Italian Coffee</h3>
+                                <p>with Ammeretto</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.10</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Witches -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Witches Coffee</h3>
+                                <p>with Strega</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.20</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade my-4" id="sunday" role="tabpanel" aria-labelledby="sunday-tab">
+                <!-- SUNDAY -->
+                <div class="row">
+                    <div class="left col-lg-6">
+                        <div class="grazers">
+                            <!-- GRAZERS -->
+                            <h1 class="great-vibes m-0">Grazing</h1>
+                            <hr class="mt-2"/>
+
+                            <!-- Crackling -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Crispy Pork Crackling</h3>
+                                    <p>Crispy Pork Crackling served with warm apple sauce.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Mixed Olives -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Mixed Olives</h3>
+                                    <p>Bowl of mixed olives, sun blushed tomatoes & crusty bread.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Hot Crusty Bread -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Hot Crusty Bread</h3>
+                                    <p>Hot crusty bread served with balsamic vinegar and olive oil dip.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+                        </div>
+
+                        <div class="starters mt-5">
+                            <!-- STARTERS -->
+                            <h1 class="great-vibes m-0">Starters</h1>
+                            <hr class="m-0"/>
+
+                            <!-- Soup -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Soup of the Day</h3>
+                                    <p>Homemade soup of the day served with hot crusty bread.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Scallops -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Pan Fried Queen Scallops</h3>
+                                    <p>Pan fried queen scallops and chorizon sausage.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Camembert -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Fried Camembert</h3>
+                                    <p>Deep fried camembert and onion marmalade.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Mullet -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Red Mullet</h3>
+                                    <p>Oven backed red mullet served with a lime and mango sauce.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Wild Mushrooms -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Wild Mushrooms</h3>
+                                    <p>Wild Mushrooms and garlic salad.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Wedges -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Potato Wedges</h3>
+                                    <p>Potato wedges with melted cheese and bacon.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+                        </div>
+
+                        <div class="mains mt-5">
+                            <!-- MAINS -->
+                            <h1 class="great-vibes m-0">Mains</h1>
+                            <hr class="m-0"/>
+
+                            <!-- Roast -->
+                            <h2 class="main-sub-heading p-2">Classic Roast Luncheon</h2>
+
+                            <!-- Beef -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Beef</h3>
+                                    <p>Locally reared Welsh topside of beef.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Lamb -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Lamb</h3>
+                                    <p>Locally reared Welsh leg of lamb.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Old Spot -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Old Spot</h3>
+                                    <p>Locally reared Gloucester Old Spot.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chicken Breast -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Chicken Breast</h3>
+                                    <p>Locally reared farmhouse chicken breast.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Vegetarian -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Vegetarian Pie / Roast</h3>
+                                    <p>Vegetarian Pie / Roast of the week.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>All of our Sunday roasts are served with fresh vegetables, roast potatoes & Yorkshire pudding.</i></p>
+                            </div>
+
+                            <!-- SEA -->
+                            <h2 class="main-sub-heading p-2">From the Sea</h2>
+
+                            <!-- Poached Salmon Steak -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Poached Salmon Steak</h3>
+                                    <p>Poached salmon steak with a creamy dill sauce, new potatoes and fresh vegetables.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£10.95</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Battered Cod -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Beer Battered Cod</h3>
+                                    <p>Homemade beer battered cod served with chips and a choice of garden peas or mushy peas.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Baguettes / Sandwiches -->
+                            <h2 class="main-sub-heading p-2">Baguettes & Club Sandwiches</h2>
+
+                            <!-- Cheese & Onion -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Mature Cheddar Cheese & Red Onion</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.25</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Ham & Mustard -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Home cooked locally reared ham & mustard</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.35</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Tuna Mayo -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Line Caughty Tuna & Mayonnaise</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.45</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Tuna Mayo -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Bacon, Lettuce & Tomato</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.60</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- BLT -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Bacon, Lettuce & Tomato</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.60</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Bacon & Coleslaw -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Bacon & Coleslaw</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£5.60</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Bacon, Brie & Cranberry -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Bacon, Brie & Cranberry</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£6.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chicken BBQ Melt -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Chicken BBQ Melt</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£6.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Sausage & Onion -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Butchers Sausage & Caramelized Onions</h3>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£6.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- 4oz Sirloin -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">4oz Sirloin Steak</h3>
+                                    <p>Served with mushrooms and onions.</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£8.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>An option of either white or brown bread.</i></p>
+                            </div>
+
+                            <!-- Ploughmans -->
+                            <h2 class="main-sub-heading p-2">Ploughman's</h2>
+
+                            <!-- Cheese & Onion -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-6 col-xl-8 pr-0">
+                                    <h3 class="item-title">Cheese & Ham Ploughman's</h3>
+                                    <p>
+                                        Traditional Farmers Ploughmans, Mature Cheddar, Farmhouse Brie & Stilton & Ham Ploughmans served with crusty bread, salad & pickles
+                                    </p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 mt-2 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-2 pr-0 mt-2 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£9.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                        </div>
+                    </div>
+
+                    <!-- Luncheon -->
+                    <div class="right col-lg-4 offset-lg-2">
+                        <div class="luncheon">
+                            <h1 class="great-vibes">Luncheon</h1>
+                            <hr class="mt-2"/>
+
+                            <!-- One Course -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">One Course</h3>
+                                    <p>Small Appetite - £8.00</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£11.00</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Two Courses -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Two Courses</h3>
+                                    <p>Small Appetite - £11.50</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£14.95</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Three Courses -->
+                            <div class="item row mt-2">
+                                <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                    <h3 class="item-title">Three Courses</h3>
+                                    <p>Small Appetite - £14.00</p>
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                                <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                    <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£17.50</p>
+                                </div>
+                            </div>
+
+                            <hr class="mt-1" />
+                        </div>
+
+                        <h1 class="great-vibes mt-5">Sides</h1>
+                        <hr class="mt-1" />
+
+                        <!-- Trellech Tatties -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Trellech Tatties</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cajun Spice</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+30p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Sweet Potato Chips -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Sweet Potato Chips</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£4.00</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cajun Spice</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+30p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+
+                        <!-- Chips -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Chips</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cajun Spice</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+30p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Fresh Vegetables -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Fresh Vegetables</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Salad -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Salad</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Coleslaw -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Homemade Coleslaw</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Onion Rings -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Beer Battered Onion Rings</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- New Potatoes -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">New Potatoes</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Garlic Bread -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Garlic Bread</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£3.50</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Cheese</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+                        <div class="sub-item row">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <p>Bacon</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 pr-0 text-center text-md-right">
+                                <p class="sub-price mr-3">+60p</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Mushy Peas -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Mushy Peas</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Bread & Butter -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Bread & Butter</h3>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£2.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade my-4" id="event" role="tabpanel" aria-labelledby="event-tab">
+                <!-- EVENTS -->
+                <div class="row">
+
+                    <div class="left col-lg-6">
+                        <!-- EVENT MAINS -->
+                        <div class="main">
+                            <h1 class="great-vibes ">Mothering Sunday</h1>
+                            <hr class="m-0"/>
+
+                            <!-- STARTERS -->
+                            <h2 class="main-sub-heading p-2">Starters</h2>
+
+                            <!-- Soup -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Tomato & Basil Soup</h3>
+                                    <p>Served with crusty bread.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chicken Liver & Cognac Pate -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Chicken Liver & Cognac Pate</h3>
+                                    <p>Served with Onion Chutney & Toast</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Prawn Salad & Marie Rose Sauce -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Prawn Salad & Marie Rose Sauce</h3>
+                                    <p></p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Hot Breaded Camembert -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Hot Breaded Camembert</h3>
+                                    <p>Served with cranberry jam.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- MAINS -->
+                            <h2 class="main-sub-heading p-2">Mains</h2>
+
+                            <!-- Roast Topside -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Locally Reared Roast Topside of Beef</h3>
+                                    <p>With Yorkshire Pudding.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Roast Leg of Lamb -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Locally Reared Roast Leg of Lamb</h3>
+                                    <p>With Yorkshire Pudding.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Pork -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Locally Reared Roast Loin of Pork</h3>
+                                    <p>With Yorkshire Pudding and Crackling.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Atlantic Salmon -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Oven Baked Atlantic Salmon Filled</h3>
+                                    <p>Topped with Asparagus & Hollandaise Sauce, served with buttered new potatoes.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Butternut Squash -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Roast Butternut Squash & Red Onion Tart</h3>
+                                    <p></p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Butternut Squash -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Roast Quorn</h3>
+                                    <p>Served with Yorkshire Pudding & Vegetarian Gravy</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>All served with a selection of fresh vegetables & roast potatoes.</i></p>
+                            </div>
+
+                            <!-- DESSERTS -->
+                            <h2 class="main-sub-heading p-2">Desserts</h2>
+
+                            <!-- Cheese & Biscuits -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Cheese & Biscuits</h3>
+                                    <p>Cheese and biscuits served with celery and strawberries.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>More choices on boards within the pub.</i></p>
+                            </div>
+
+                        </div>
+
+                        <!-- EVENT MAINS -->
+                        <div class="main mt-5">
+                            <h1 class="great-vibes ">Easter Sunday</h1>
+                            <hr class="m-0"/>
+
+                            <!-- STARTERS -->
+                            <h2 class="main-sub-heading p-2">Starters</h2>
+
+                            <!-- Soup -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Homemade Leek & Potato Soup</h3>
+                                    <p>Served with crusty bread.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Chicken Liver & Cognac Pate -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Pork & Apple Terrine and Chicken Liver & Cognac Pate</h3>
+                                    <p>Served with Toast</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Portabello Mushrooms -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Oven Baked Portabello Mushrooms filled with Stilton & Breadcrumbs</h3>
+                                    <p>Served with a garlic dip.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />                    
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Trio of Melon -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Trio of Melon and Soft Berry Salad</h3>
+                                    <p></p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- MAINS -->
+                            <h2 class="main-sub-heading p-2">Mains</h2>
+
+                            <!-- Roast Topside -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Locally Reared Roast Topside of Beef</h3>
+                                    <p>With Yorkshire Pudding.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Roast Leg of Lamb -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Locally Reared Roast Leg of Lamb</h3>
+                                    <p>With Yorkshire Pudding.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Pork -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Locally Sourced Turkey Parcel</h3>
+                                    <p>filled with Pork, Sage, Onion and Chestnut Stuffing, served with Yorkshire Pudding and Crackling.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Atlantic Salmon -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Oven Baked Atlantic Salmon Filled</h3>
+                                    <p>Served with a white wine oyster mushroom and dill cream sauce and buttered new potatoes.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0"></div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Butternut Squash -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Brie & Beetroot Chutney Tartcooked in a Kale Pastry</h3>
+                                    <p></p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <!-- Butternut Squash -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Roast Quorn</h3>
+                                    <p>Served with Yorkshire Pudding & Vegetarian Gravy</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>All served with a selection of fresh vegetables & roast potatoes.</i></p>
+                            </div>
+
+                            <!-- DESSERTS -->
+                            <h2 class="main-sub-heading p-2">Desserts</h2>
+
+                            <!-- Cheese & Biscuits -->
+                            <div class="item row mt-2">
+                                <div class="col-8 pr-0">
+                                    <h3 class="item-title">Cheese & Biscuits</h3>
+                                    <p>Cheese and biscuits served with celery and strawberries.</p>
+                                </div>
+                                <div class="col-4 mt-2 px-0">
+                                    <img class="mx-2" src="images/vegetarian.png" alt="Image of Vegetarian Icon" />
+                                </div>
+                                <div class="pr-0 mt-2 text-center"></div>
+                            </div>
+
+                            <hr class="mt-1" />
+
+                            <div class="note">
+                                <p><i>More choices on boards within the pub.</i></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SIDES -->
+                    <div class="sides right col-lg-4 offset-lg-2">
+                        <h1 class="great-vibes">Price</h1>
+                        <hr class="mt-1" />
+
+                        <!-- Adults -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Adults</h3>
+                                <p></p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£18.00</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Children -->
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Children</h3>
+                                <p></p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center">
+                                <p class="price ml-md-4 py-1 pl-1 pr-2 px-md-2">£12.50</p>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                        <!-- Coffee -->
+                        <h1 class="great-vibes">Coffee</h1>
+                        <hr class="mt-1" />
+
+                        <div class="item row mt-2">
+                            <div class="col-6 col-md-8 col-lg-5 col-xl-6 pr-0">
+                                <h3 class="item-title">Peruvian Fair Trade Coffee</h3>
+                                <p>Dark Chocolate Mints</p>
+                            </div>
+                            <div class="col-3 col-md-2 col-lg-3 col-xl-3 px-0"></div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 pr-0 text-center"></div>
+                        </div>
+
+                        <hr class="mt-1" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- End container -->
+
+    <div class="container-fluid footer-bg">
+        <div class="container">
+
+            <!-- <div class="gallery">
+
+            </div> -->
+
+
+            <div id="footer" class="footer py-2">
+                <div class="row contact text-center">
+                    <div class="col-4 order-lg-1 col-lg-1 offset-lg-2">
+                        <i class="fas fa-phone mt-2"></i>
+                        <p class="mb-0 mt-1">01600 860322</p>
+                    </div>
+                    <div class="col-4 order-lg-2 col-lg-1">
+                        <i class="fas fa-envelope mt-2"></i>
+                        <p class="mb-0 mt-1 overflow">debs@globalnet.co.uk</p>
+                    </div>
+                    <div class="col-4 order-lg-3 col-lg-1">
+                        <i class="fas fa-map-marker-alt mt-2"></i>
+                        <a href="https://maps.google.com/?q=51.7460885,-2.7240651&t=m" target="_blank">
+                            <p class="mb-0 mt-1">Get Directions</p>
+                        </a>
+                    </div>
+                    <div class="col-12 order-first order-lg-4 col-lg-2 algeria d-flex flex-column">
+                        <h2 class="my-auto">THE LION INN</h2>
+                    </div>
+                    <div class="col-4 order-lg-5 col-lg-1">
+                        <a href="#">
+                            <i class="fab fa-google mt-2"></i>
+                        </a>
+                        <p class="mb-0 mt-1">Google</p>
+                    </div>
+                    <div class="col-4 order-lg-6 col-lg-1">
+                        <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g552009-d732964-Reviews-Lion_Inn-Monmouth_Monmouthshire_South_Wales_Wales.html">
+                            <i class="fab fa-tripadvisor mt-2"></i>
+                        </a>
+                        <p class="mb-0 mt-1">TripAdvisor</p>
+                    </div>
+                    <div class="col-4 order-lg-7 col-lg-1">
+                        <a href="https://www.facebook.com/TheLionInnTrellech/">
+                            <i class="fab fa-facebook mt-2"></i>
+                        </a>
+                        <p class="mb-0 mt-1">Facebook</p>
+                    </div>
+                </div>
+
+                <div class="copyright text-center mt-3">
+                    <p class="mb-0">Copyright &copy; 2004 - 2018 All Content of this site is property of The Lion Inn and must not be reproduced without permission.  Every effort is made to ensure the details contained on this site are correct.  However, we cannot accept responsibility for errors and omissions.</p>
+                </div>
+            </div>
+        </div> <!-- Container -->
+
+    </div> <!-- Container Fluid -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
