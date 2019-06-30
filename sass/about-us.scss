@@ -5,6 +5,17 @@
 @import 'variables';
 
 /**
+ *
+ */
+.about-us .bg-white {
+    // box-shadow: 7px 7px 50px #000, 7px 7px 50px #000;
+    box-shadow: 7px 7px 0px 5px blue, 
+                7px 7px 50px 5px green, 
+                7px 7px 15px -4px #000, 
+                0px 0px 0px 0px yellow;
+}
+
+/**
  * Left Side Content
  */
 .about-us h1 {
@@ -21,6 +32,6 @@
  * Right Side Content
  */ 
 .about-us-image {
-    width: 75%;
+    width: 90%;
     height: auto;
 }
