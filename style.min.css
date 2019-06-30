@@ -1,3 +1,17 @@
+.about-us h1 {
+  color: #000;
+  font-size: 3vw;
+}
+
+.about-us p {
+  color: #000;
+  line-height: 200%;
+}
+
+.about-us-image {
+  width: 75%;
+  height: auto;
+}
 .events {
   color: #000;
 }
@@ -104,7 +118,21 @@
   font-style: normal;
 }
 .food {
-  color: #000;
+  color: #fff;
+}
+
+.food-bg-image {
+  background: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.2))),url("images/food-bg.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("images/food-bg.jpg") no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.food h1 {
+  color: #fff;
 }
 
 .food .menu a:hover {

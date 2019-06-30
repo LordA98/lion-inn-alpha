@@ -1,0 +1,20 @@
+/*
+ * CSS styling related to events section
+ */
+/**
+ * Left Side Content
+ */
+.about-us h1 {
+  color: black;
+  font-size: 3vw; }
+
+.about-us p {
+  color: black;
+  line-height: 200%; }
+
+/**
+ * Right Side Content
+ */
+.about-us-image {
+  width: 75%;
+  height: auto; }
