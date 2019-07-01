@@ -6,7 +6,7 @@
  */
 @media (max-width: 576px) {
   .section-heading {
-    font-size: 15vw; }
+    font-size: 15vw !important; }
   .minor-heading {
     font-size: 9vw; } }
 

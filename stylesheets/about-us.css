@@ -2,10 +2,13 @@
  * CSS styling related to events section
  */
 /**
- *
+ * Box-shadow on white square
  */
-.about-us .bg-white {
-  box-shadow: 7px 7px 0px 5px blue,  7px 7px 50px 5px green,  7px 7px 15px -4px #000,  0px 0px 0px 0px yellow; }
+.about-us #left-content {
+  box-shadow: 7px 7px 50px #000; }
+
+.about-us #right-content {
+  box-shadow: 20px 0 40px -20px #000; }
 
 /**
  * Left Side Content
@@ -13,6 +16,10 @@
 .about-us h1 {
   color: black;
   font-size: 3vw; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .about-us h1 {
+    font-size: 6vw !important; } }
 
 .about-us p {
   color: black;
@@ -24,3 +31,8 @@
 .about-us-image {
   width: 90%;
   height: auto; }
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .about-us-image {
+    width: 100%;
+    height: auto; } }

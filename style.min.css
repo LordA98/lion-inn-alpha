@@ -1,11 +1,22 @@
-.about-us .bg-white {
-  -webkit-box-shadow: 7px 7px 0 5px #00f,7px 7px 50px 5px green,7px 7px 15px -4px #000,0 0 0 0 #ff0;
-  box-shadow: 7px 7px 0 5px #00f,7px 7px 50px 5px green,7px 7px 15px -4px #000,0 0 0 0 #ff0;
+.about-us #left-content {
+  -webkit-box-shadow: 7px 7px 50px #000;
+  box-shadow: 7px 7px 50px #000;
+}
+
+.about-us #right-content {
+  -webkit-box-shadow: 20px 0 40px -20px #000;
+  box-shadow: 20px 0 40px -20px #000;
 }
 
 .about-us h1 {
   color: #000;
   font-size: 3vw;
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+  .about-us h1 {
+    font-size: 6vw!important;
+  }
 }
 
 .about-us p {
@@ -16,6 +27,13 @@
 .about-us-image {
   width: 90%;
   height: auto;
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+  .about-us-image {
+    width: 100%;
+    height: auto;
+  }
 }
 .events {
   color: #000;
@@ -364,7 +382,7 @@ nav .mobile-footer {
 }
 @media (max-width:576px) {
   .section-heading {
-    font-size: 15vw;
+    font-size: 15vw!important;
   }
 
   .minor-heading {
