@@ -35,6 +35,37 @@
     height: auto;
   }
 }
+#accommodation .cards,
+#accommodation h1,
+#accommodation h2,
+#accommodation h4,
+#accommodation p {
+  color: #000;
+}
+
+#accommodation p {
+  line-height: 250%;
+}
+
+#accommodation .cottage-img {
+  width: 100%;
+}
+
+#accommodation .card-header {
+  color: #fff;
+  background-color: #673ab7;
+  font-size: 30pt;
+}
+
+#accommodation .card-body p {
+  font-size: 10pt;
+}
+
+#accommodation .card {
+  border: none;
+  -webkit-box-shadow: 0 3px 15px rgba(0,0,0,.2);
+  box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
 .events {
   color: #000;
 }
