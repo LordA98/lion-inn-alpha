@@ -20,6 +20,13 @@
   color: #FFF; }
 
 /*
+ * Prevent bg image overflow on iPad sized devices
+ */
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .food-bg-image {
+    height: 80%; } }
+
+/*
  * FOOD --> MENU section
  */
 .food .menu a:hover {
